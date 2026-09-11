@@ -10,7 +10,7 @@ export default function Home() {
         <p className="text-xl text-gray-600 mb-8 max-w-2xl">
           Skill-based merit evaluation platform that removes bias from recruitment
         </p>
-        
+
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
           <Link
             href="/bounties"
@@ -40,7 +40,7 @@ export default function Home() {
               Automatic scoring based on demonstrated skills, not pedigree
             </p>
           </div>
-          
+
           <div className="bg-white p-6 rounded-lg shadow-md">
             <div className="text-3xl mb-2">🔒</div>
             <h3 className="font-semibold text-gray-900 mb-2">Blind Review</h3>
@@ -48,7 +48,7 @@ export default function Home() {
               Recruiters see only anonymous IDs and skill scores
             </p>
           </div>
-          
+
           <div className="bg-white p-6 rounded-lg shadow-md">
             <div className="text-3xl mb-2">⚡</div>
             <h3 className="font-semibold text-gray-900 mb-2">Verified Competency</h3>

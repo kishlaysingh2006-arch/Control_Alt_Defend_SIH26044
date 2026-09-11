@@ -145,7 +145,7 @@ Control_Alt_Defend_SIH26044/
 - **`app/api/submissions/route.ts`**: Handles submission creation and scoring
 - **`skill_trends (1).json`**: Real AYUSH sector market data from NSDC/HSSC for curriculum planning
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -200,7 +200,7 @@ Control_Alt_Defend_SIH26044/
    
    Visit [http://localhost:3000](http://localhost:3000) in your browser
 
-## 🎮 Usage Guide
+## Usage Guide
 
 ### For Students (Candidates)
 
@@ -287,7 +287,7 @@ async function scoreSubmission(submissionText: string, requiredSkills: string[])
 - Can be swapped out without changing calling code
 - Demonstrates the concept for hackathon evaluation
 
-## 🎨 Features Showcase
+## Features Showcase
 
 ### 1. **Blind Merit Evaluation**
 - Anonymous candidate IDs prevent name-based bias
@@ -418,7 +418,7 @@ model Submission {
 }
 ```
 
-## 🌐 Domain Context: AYUSH Sector
+## Domain Context: AYUSH Sector
 
 ### Why AYUSH?
 
@@ -460,7 +460,7 @@ The project focuses on the **AYUSH sector** (Ayurveda, Yoga, Unani, Siddha, Home
 - Stress Management
 - Community Health Documentation
 
-## 🎯 Impact & Outcomes
+## Impact & Outcomes
 
 ### Problem Solved
 
@@ -492,7 +492,7 @@ Blind Merit Ranking:
 - **For Institutions**: Tier-2/3 colleges see ROI on skill-focused training
 - **For Industry**: Better skill matching reduces training costs and turnover
 
-## 🔮 Future Enhancements
+## Future Enhancements
 
 ### Phase 1: MVP Improvements
 - [ ] Replace substring matching with NLP-based semantic similarity
@@ -537,15 +537,10 @@ npm start                # Start production server
 npm run lint             # Run ESLint
 ```
 
-## 🤝 Contributing
+## Contributing
 
 This project was developed as part of **Smart India Hackathon 2026** (SIH-95) by **Team Control_Alt_Defend**.
 
-### Team Members
-- Project lead and full-stack implementation
-- Focus on blind merit evaluation systems
-- AYUSH sector skill mapping
-- UI/UX design for dual-view dashboard
 
 ### How to Contribute
 
@@ -555,11 +550,11 @@ This project was developed as part of **Smart India Hackathon 2026** (SIH-95) by
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📜 License
+## License
 
 This project is developed for Smart India Hackathon 2026. All rights reserved.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **Ministry of AYUSH** for sector data and skill frameworks
 - **NSDC/HSSC** for National Skills Qualification Framework (NSQF) standards
@@ -567,7 +562,7 @@ This project is developed for Smart India Hackathon 2026. All rights reserved.
 - **AICTE** for organizing the hackathon
 - All open-source contributors to Next.js, Prisma, PostgreSQL, and Tailwind CSS
 
-## 📞 Support
+## Support
 
 For questions or issues:
 - Open an issue on GitHub

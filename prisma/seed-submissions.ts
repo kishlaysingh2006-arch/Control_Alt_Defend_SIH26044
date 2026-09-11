@@ -15,7 +15,7 @@ async function main() {
     throw new Error('Bounty "Develop a Yoga Therapy Plan for Workplace Stress Management" not found. Run npm run seed first.');
   }
 
-  console.log(`📋 Bounty: ${bounty.title}`);
+  console.log(`Bounty: ${bounty.title}`);
   console.log(`Company: ${bounty.company}`);
   console.log(`Required skills: ${bounty.requiredSkills.join(', ')}\n`);
 
@@ -102,19 +102,19 @@ async function main() {
     console.log('');
   }
 
-  console.log('✅ AYUSH-themed engineered submissions created!\n');
-  console.log('📊 Demo Punchline:');
-  console.log('   Raw View (by pedigree): Aditi (IIT) → Karan (DTU) → Meera (NIT) → Sana → Ravi (Polytechnic)');
-  console.log('   Blind View (by score):  Ravi (100%) → Sana (75%) → Karan/Meera (50%) → Aditi (25%)');
+  console.log(' AYUSH-themed engineered submissions created!\n');
+  console.log(' Demo Punchline:');
+  console.log(' Raw View (by pedigree): Aditi (IIT) → Karan (DTU) → Meera (NIT) → Sana → Ravi (Polytechnic)');
+  console.log(' Blind View (by score):  Ravi (100%) → Sana (75%) → Karan/Meera (50%) → Aditi (25%)');
   console.log('');
-  console.log('🎭 The reversal: Ravi jumps from LAST to FIRST. Aditi drops from FIRST to LAST.');
+  console.log(' The reversal: Ravi jumps from LAST to FIRST. Aditi drops from FIRST to LAST.');
   console.log('');
-  console.log('🏥 Context: AYUSH sector (Yoga Therapy for workplace wellness)');
+  console.log(' Context: AYUSH sector (Yoga Therapy for workplace wellness)');
 }
 
 main()
   .catch((e) => {
-    console.error('❌ Seed submissions failed:', e);
+    console.error('Seed submissions failed:', e);
     process.exit(1);
   })
   .finally(async () => {

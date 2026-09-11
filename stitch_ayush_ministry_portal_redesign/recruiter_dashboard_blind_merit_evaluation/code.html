@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Public+Sans:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-primary-container":"#84c39b","on-secondary-fixed":"#331200","on-secondary":"#ffffff","inverse-surface":"#2d3133","on-tertiary-container":"#adb4ce","on-error":"#ffffff","on-tertiary":"#ffffff","tertiary-fixed-dim":"#bec6e0","background":"#f7f9fb","tertiary-container":"#3f465b","tertiary":"#283044","outline":"#707971","on-background":"#191c1e","inverse-primary":"#95d4ac","primary-fixed":"#b0f1c7","primary":"#003820","error":"#ba1a1a","surface-variant":"#e0e3e5","on-tertiary-fixed-variant":"#3f465c","inverse-on-surface":"#eff1f3","on-primary-fixed-variant":"#0f5132","on-tertiary-fixed":"#131b2e","secondary-container":"#fd8a42","on-surface-variant":"#404942","surface-dim":"#d8dadc","surface-container-highest":"#e0e3e5","primary-container":"#0f5132","on-primary-fixed":"#002111","on-secondary-fixed-variant":"#763300","primary-fixed-dim":"#95d4ac","tertiary-fixed":"#dae2fd","on-primary":"#ffffff","surface-bright":"#f7f9fb","surface-tint":"#2d6a48","on-surface":"#191c1e","secondary-fixed":"#ffdbca","surface":"#f7f9fb","secondary":"#9b4500","on-error-container":"#93000a","secondary-fixed-dim":"#ffb68e","outline-variant":"#c0c9c0","surface-container-low":"#f2f4f6","surface-container-high":"#e6e8ea","on-secondary-container":"#682c00","surface-container":"#eceef0","error-container":"#ffdad6","surface-container-lowest":"#ffffff"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-lg":"1.5rem","space-xs":"0.25rem","margin":"2rem","gutter":"1.25rem","space-xl":"2.5rem","space-sm":"0.5rem","space-md":"1rem"},fontFamily:{"label-lg":["Public Sans"],"body-md":["Inter"],"display-lg":["Public Sans"],"headline-md":["Public Sans"],"label-md":["Public Sans"],"body-sm":["Inter"],"headline-xl-mobile":["Public Sans"],"headline-xl":["Public Sans"],"headline-lg":["Public Sans"],"tabular-data":["Inter"],"display-lg-mobile":["Public Sans"],"title-md":["Public Sans"],"headline-sm":["Public Sans"],"body-lg":["Inter"],"label-sm":["Public Sans"]},fontSize:{"label-lg":["13px",{"lineHeight":"16px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"display-lg":["40px",{"lineHeight":"48px","fontWeight":"700"}],"headline-md":["20px",{"lineHeight":"28px","fontWeight":"600"}],"label-md":["11px",{"lineHeight":"14px","letterSpacing":"0.06em","fontWeight":"700"}],"body-sm":["12px",{"lineHeight":"18px","fontWeight":"400"}],"headline-xl-mobile":["24px",{"lineHeight":"32px","fontWeight":"700"}],"headline-xl":["32px",{"lineHeight":"40px","fontWeight":"700"}],"headline-lg":["24px",{"lineHeight":"32px","fontWeight":"600"}],"tabular-data":["14px",{"lineHeight":"20px","fontWeight":"600"}],"display-lg-mobile":["28px",{"lineHeight":"36px","fontWeight":"700"}],"title-md":["14px",{"lineHeight":"20px","letterSpacing":"0.05em","fontWeight":"700"}],"headline-sm":["16px",{"lineHeight":"24px","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"label-sm":["10px",{"lineHeight":"12px","letterSpacing":"0.08em","fontWeight":"700"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low z-50 flex flex-col justify-between pt-space-md pb-space-lg"><div class="flex flex-col gap-space-md"><div class="px-space-md flex flex-col gap-space-xs"><div class="flex items-center gap-space-sm"><img alt="Ministry of AYUSH Blind Merit Engine Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W6JDvbSwhpm8FgjnimXzRixbirFztk5N2kQJrR8qZ3g9Uw53Q-Z5f3vkmJEX4YvTxpB-0J79N-VkJkcj2e39bhY_fj8Cxt522Ug4liIzWdBAdxMvkGFhvunaFm7KMUQyMsZkqj1EYVgDafAXUPX3AqLGvn3AQb9llQjKsaZfSriUbtfBLraX9k6cCKq4GEpJtkD4CxDdWsTdQCE7yNFNG5aPaL4lpPDCKNCO1BxbagafcEjRVczfa7gia0"/><span class="font-label-lg text-label-lg text-primary uppercase">AYUSH RECRUIT</span></div><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Blind Merit Engine • SIH-26044</span></div><div class="mx-space-md px-space-sm py-space-xs bg-surface-container-high rounded-DEFAULT"><div class="flex items-center gap-space-xs text-primary font-label-sm text-label-sm uppercase font-bold"><span class="w-2 h-2 rounded-full bg-primary"></span><span>Blind Evaluation Active</span></div><span class="font-body-sm text-body-sm text-on-surface-variant">Candidate PII Scrubbed</span></div><nav class="flex flex-col gap-1 px-space-sm" data-active-classes="bg-primary-container text-on-primary-container"><a aria-current="page" class="flex items-center px-space-md py-space-sm rounded-lg transition-all font-label-lg bg-primary-container text-on-primary-container" data-path="recruiter-dashboard" href="#"><span class="material-symbols-outlined mr-space-sm text-[18px]">space_dashboard</span>Dashboard Overview</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="available-bounties" href="#"><span class="material-symbols-outlined mr-space-sm text-[18px]">verified</span>Active Bounties</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="predictive-curriculum-delta" href="#"><span class="material-symbols-outlined mr-space-sm text-[18px]">analytics</span>Curriculum Delta</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="merit-verification-queue" href="#"><span class="material-symbols-outlined mr-space-sm text-[18px]">how_to_reg</span>Blind Merit Roster</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="documentation" href="#"><span class="material-symbols-outlined mr-space-sm text-[18px]">menu_book</span>NQR Guidelines</a></nav></div><div class="px-space-md flex flex-col gap-space-xs font-label-sm text-label-sm text-on-surface-variant"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[14px]">gavel</span><span>Statutory Evaluation Sandbox</span></div><span>SIH 2024 / Control_Alt_Defend</span></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-md"><span class="font-label-sm text-label-sm uppercase bg-surface-container px-space-sm py-1 rounded-DEFAULT text-on-surface-variant">Institutional Recruiter Session</span><span class="text-on-surface-variant font-label-sm text-label-sm hidden md:inline">Govt. of India • National Skill Portal</span></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs bg-primary-fixed text-on-primary-fixed px-space-sm py-1 rounded-DEFAULT font-label-sm text-label-sm uppercase"><span class="material-symbols-outlined text-[14px]">lock</span><span>PII Redacted</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 bg-surface"><div class="px-space-lg py-space-sm bg-surface-container-low font-label-sm text-label-sm text-on-surface-variant flex items-center gap-space-xs"><span class="material-symbols-outlined text-[14px]">admin_panel_settings</span><span>Evaluation Console</span><span>/</span><span class="text-primary font-bold uppercase">National Ayurvedic & AYUSH Talent Match</span></div><div class="p-space-lg"><div class="flex flex-col w-full">
+<section class="mb-space-lg flex flex-col gap-space-sm">
+<div class="flex flex-wrap items-center justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-space-xs mb-1">
+<span class="font-label-sm text-label-sm uppercase bg-surface-container-high px-space-xs py-0.5 rounded text-on-surface-variant tracking-wider">SIH Statutory Protocol #AYUSH-2024-V4</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm uppercase text-primary font-bold bg-surface-container-low px-space-xs py-0.5 rounded">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+            Live Audit Stream Active
+          </span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-primary tracking-tight">Recruiter Blind Merit Evaluation Console</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl mt-0.5">
+          Objective algorithmic competency grading. Identity metadata, educational pedigrees, and tier bias are strictly shielded to ensure NSQF-compliant merit-only shortlisting.
+        </p>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-low p-space-xs rounded-xl shadow-sm">
+<button class="flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-primary text-on-primary shadow-sm transition-all font-label-lg text-label-lg" id="mode-blind-btn" onclick="setEvaluationMode('blind')">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+<span>Blind Merit View</span>
+<span class="text-[10px] uppercase font-bold tracking-wider px-1.5 py-0.5 bg-primary-container text-on-primary-container rounded">Anti-Bias</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-all font-label-lg text-label-lg" id="mode-raw-btn" onclick="setEvaluationMode('raw')">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+<span>De-anonymized Raw View</span>
+</button>
+</div>
+</div>
+<!-- Mode Advisory Banner -->
+<div class="bg-surface-container-low rounded-lg p-space-md flex items-start gap-space-md shadow-sm transition-all" id="blind-mode-banner">
+<div class="w-9 h-9 rounded bg-primary-fixed flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">verified_user</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-lg text-label-lg text-primary uppercase">Anti-Bias Protocol Enforced</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Rule AYUSH-NDM-2024</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+          PII Scrubbed: Candidate Names, Academic Institutional Tiers, Demographic Gender, and Cumulative GPAs are encrypted and completely obscured to prevent pedigree prestige bias.
+        </p>
+</div>
+<div class="hidden lg:flex items-center gap-space-xs px-space-sm py-1 bg-surface-container-high rounded text-on-surface-variant font-label-sm text-label-sm uppercase">
+<span class="material-symbols-outlined text-[14px]">gavel</span>
+<span>Sec. 4B Compliance</span>
+</div>
+</div>
+<div class="hidden bg-surface-container-high rounded-lg p-space-md items-start gap-space-md shadow-sm transition-all" id="raw-mode-banner">
+<div class="w-9 h-9 rounded bg-secondary-fixed flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[20px]">warning</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-lg text-label-lg text-secondary uppercase font-bold">Confidential: Identity Revealed</span>
+<span class="font-label-sm text-label-sm bg-secondary-container text-on-secondary-container px-1.5 py-0.5 rounded uppercase">Final Review Only</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+          Reveals identity for verified final interview stage only. All evaluation actions in raw mode are logged in the Ministry compliance ledger for algorithmic accountability audits.
+        </p>
+</div>
+<button class="px-space-sm py-1 rounded bg-primary text-on-primary font-label-sm text-label-sm uppercase hover:opacity-90" onclick="setEvaluationMode('blind')">
+        Re-engage Shield
+      </button>
+</div>
+</section>
+<!-- Bounty Context + Aggregate Analytics Grid -->
+<section class="grid grid-cols-1 xl:grid-cols-12 gap-space-md mb-space-lg">
+<!-- Bounty Context Bento Card -->
+<div class="xl:col-span-8 bg-surface-container-lowest rounded-lg p-space-lg shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="absolute right-0 top-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
+<div>
+<div class="flex items-center justify-between gap-space-sm mb-space-xs">
+<div class="flex items-center gap-space-xs text-secondary font-label-md text-label-md uppercase tracking-wider">
+<span class="material-symbols-outlined text-[16px]">work</span>
+<span>Bounty Evaluation Cohort #BNT-4409</span>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container-high text-on-surface-variant px-space-xs py-0.5 rounded">
+            Closing: 14 hrs remaining
+          </span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">
+          Develop a Yoga Therapy Plan for Workplace Stress Management
+        </h2>
+<div class="flex flex-wrap items-center gap-y-1 gap-x-space-md mt-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">domain</span>
+<strong class="text-on-surface font-label-lg text-label-lg">Prana Wellness Retreats</strong> (Corporate Partner)
+          </span>
+<span class="text-surface-dim">•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">verified</span>
+            NSQF Level 6 Accredited
+          </span>
+<span class="text-surface-dim">•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">currency_rupee</span>
+            Stipend / Grant: ₹45,000 INR
+          </span>
+</div>
+</div>
+<div class="mt-space-md pt-space-md bg-surface-container-low -mx-space-lg -mb-space-lg px-space-lg pb-space-md">
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant block mb-1">Required Evaluation Competencies (4 Mandatory Units):</span>
+<div class="flex flex-wrap gap-space-xs">
+<span class="px-space-xs py-1 rounded bg-surface-container-lowest font-label-sm text-label-sm text-primary flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">self_improvement</span> Yoga Therapy
+              </span>
+<span class="px-space-xs py-1 rounded bg-surface-container-lowest font-label-sm text-label-sm text-primary flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">calendar_month</span> Session Planning
+              </span>
+<span class="px-space-xs py-1 rounded bg-surface-container-lowest font-label-sm text-label-sm text-primary flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">air</span> Breathing Techniques
+              </span>
+<span class="px-space-xs py-1 rounded bg-surface-container-lowest font-label-sm text-label-sm text-primary flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">psychology</span> Stress Management
+              </span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-sm py-1.5 rounded bg-surface-container-highest text-on-surface-variant hover:bg-surface-variant font-label-sm text-label-sm uppercase transition-all flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">description</span> Rubric
+            </button>
+<button class="px-space-sm py-1.5 rounded bg-surface-container-highest text-on-surface-variant hover:bg-surface-variant font-label-sm text-label-sm uppercase transition-all flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">tune</span> Weights
+            </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Aggregate Stats Strip -->
+<div class="xl:col-span-4 grid grid-cols-2 gap-space-sm">
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Candidates</span>
+<span class="material-symbols-outlined text-[18px]">group</span>
+</div>
+<div class="my-space-xs">
+<span class="font-headline-xl text-headline-xl text-primary font-bold">5</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant ml-1">Total Submissions</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-full"></div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-secondary">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Highest Match</span>
+<span class="material-symbols-outlined text-[18px]">social_leaderboard</span>
+</div>
+<div class="my-space-xs">
+<span class="font-headline-xl text-headline-xl text-secondary font-bold tabular-nums">100%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant ml-1">4/4 Verified</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary-container h-full w-full"></div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Average Match</span>
+<span class="material-symbols-outlined text-[18px]">query_stats</span>
+</div>
+<div class="my-space-xs">
+<span class="font-headline-xl text-headline-xl text-on-surface font-bold tabular-nums">60%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant ml-1">Across Roster</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary-fixed-dim h-full w-3/5"></div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-primary">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Shortlisted</span>
+<span class="material-symbols-outlined text-[18px]">bookmark_added</span>
+</div>
+<div class="my-space-xs">
+<span class="font-headline-xl text-headline-xl text-primary font-bold tabular-nums">2</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant ml-1">Qualified (≥75%)</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[40%]"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Control & Filter Bar -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm mb-space-md flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-lg text-label-lg text-primary uppercase">Candidate Dossiers</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm bg-surface-container px-space-xs py-0.5 rounded">Sorted by Verified Skill Score</span>
+</div>
+<div class="flex items-center gap-space-sm flex-wrap">
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm mr-space-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">filter_alt</span>
+<span>Filter:</span>
+</div>
+<button class="px-space-sm py-1 rounded bg-primary text-on-primary font-label-sm text-label-sm">All (5)</button>
+<button class="px-space-sm py-1 rounded bg-surface-container-high text-on-surface-variant hover:bg-surface-variant font-label-sm text-label-sm">Recommended (2)</button>
+<button class="px-space-sm py-1 rounded bg-surface-container-high text-on-surface-variant hover:bg-surface-variant font-label-sm text-label-sm">Requires Review (3)</button>
+<div class="h-4 w-px bg-surface-variant mx-1"></div>
+<button class="px-space-sm py-1 rounded bg-surface-container-high text-on-surface-variant hover:bg-surface-variant font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">file_download</span> Export CSV
+      </button>
+</div>
+</div>
+<!-- Candidate Roster (Authored by Authentic Institutional Layout) -->
+<div class="flex flex-col gap-space-md mb-space-xl">
+<!-- CANDIDATE #5 (TOP SPOTLIGHT - RAVI KUMAR) -->
+<div class="bg-surface-container-lowest rounded-lg shadow-md overflow-hidden relative" data-candidate="5">
+<!-- High-Priority Left Border Accent via Absolute Strip -->
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-primary"></div>
+<!-- Top Merit Ribbon -->
+<div class="bg-primary px-space-lg py-1.5 text-on-primary flex flex-wrap items-center justify-between gap-space-sm pl-space-xl">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-primary-fixed">stars</span>
+<span class="font-label-sm text-label-sm uppercase font-bold tracking-wider">Top Matched Candidate • 100% Skills Verified via Demonstration</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-primary-container uppercase bg-primary-container px-space-xs py-0.5 rounded">
+          Algorithmic Merit Score: 99.8 / 100
+        </span>
+</div>
+<div class="p-space-lg pl-space-xl flex flex-col gap-space-md">
+<!-- Card Header Strip -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded bg-primary-fixed flex flex-col items-center justify-center text-primary font-bold shrink-0">
+<span class="font-label-sm text-label-sm uppercase leading-none">Rank</span>
+<span class="font-headline-md text-headline-md leading-none mt-0.5">#01</span>
+</div>
+<div>
+<div class="flex flex-wrap items-center gap-space-xs">
+<!-- Blind Mode Title -->
+<span class="candidate-blind-title font-headline-md text-headline-md text-primary font-bold">
+                  Candidate ID: AYUSH-BLIND-5573
+                </span>
+<!-- Raw Mode Title -->
+<span class="candidate-raw-title hidden font-headline-md text-headline-md text-on-surface font-bold">
+                  Ravi Kumar <span class="font-body-md text-body-md text-on-surface-variant font-normal">— Government Polytechnic, Bhopal</span>
+</span>
+<span class="candidate-raw-badge hidden px-space-xs py-0.5 bg-surface-container-high rounded text-on-surface-variant font-label-sm text-label-sm">
+                  GPA: 6.4 (Tier-3 Polytechnic)
+                </span>
+<span class="candidate-blind-badge px-space-xs py-0.5 bg-surface-container text-on-surface-variant rounded font-label-sm text-label-sm uppercase">
+                  Blind Hash: 8b6a••c1
+                </span>
+<span class="px-space-xs py-0.5 bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm rounded uppercase font-bold">
+                  Highest Rank
+                </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                Submission: <strong class="text-on-surface">"7-Day Ergonomic & Pranayama Protocol for Deskbound Exhaustion"</strong> • Verified via Video Demonstration & Lesson Plan
+              </p>
+</div>
+</div>
+<!-- Score Module -->
+<div class="flex items-center gap-space-lg self-start lg:self-auto bg-surface-container-low px-space-md py-space-sm rounded-lg">
+<div class="text-right">
+<div class="flex items-baseline justify-end gap-1">
+<span class="font-display-lg text-display-lg text-primary font-bold tabular-nums">100%</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase font-bold">(4/4 Skills Matched)</span>
+</div>
+<div class="w-16 h-16 shrink-0 relative flex items-center justify-center">
+<svg class="w-16 h-16 transform -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-variant" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-primary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="100, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<span class="material-symbols-outlined text-primary absolute text-[22px]">verified</span>
+</div>
+</div>
+</div>
+<!-- Competency Matrix Badges -->
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant block mb-1">Demonstrated & Verified Competencies:</span>
+<div class="flex flex-wrap gap-space-xs">
+<span class="px-space-sm py-1 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Yoga Therapy (Verified)
+            </span>
+<span class="px-space-sm py-1 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Session Planning (Verified)
+            </span>
+<span class="px-space-sm py-1 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Breathing Techniques (Verified)
+            </span>
+<span class="px-space-sm py-1 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Stress Management (Verified)
+            </span>
+</div>
+</div>
+<!-- Evaluator AI / Rule Summary Block -->
+<div class="bg-surface-container-low rounded p-space-md">
+<div class="flex items-center gap-space-xs text-primary font-label-sm text-label-sm uppercase font-bold mb-1">
+<span class="material-symbols-outlined text-[16px]">psychology</span>
+<span>Evaluator Rule Summary • SIH-26044 Automated Criterion Review</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface">
+            "Designed a complete yoga therapy plan for corporate stress management, with structured session planning across a 7-day cycle and targeted breathing techniques such as Nadi Shodhana and Bhramari."
+          </p>
+<!-- Impact Highlight Callout -->
+<div class="mt-space-sm p-space-sm bg-surface-container-highest rounded flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">lightbulb</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+<strong class="text-on-surface">Blind Merit System Validation:</strong> Demonstrates how blind merit prioritizes skill mastery over Tier-1 college prestige (Polytechnic applicant outscores IIT/NIT applicants on actual practical deliverables).
+            </p>
+</div>
+</div>
+<!-- Action Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">schedule</span>
+<span>Evaluated 2 hours ago via Automated Skill Engine</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-space-sm rounded bg-surface-container-high text-on-surface hover:bg-surface-variant font-label-sm text-label-sm uppercase transition-all flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">visibility</span> View Submission
+            </button>
+<button class="px-space-md py-space-sm rounded bg-surface-container-high text-on-surface hover:bg-surface-variant font-label-sm text-label-sm uppercase transition-all flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">download</span> Download Dossier
+            </button>
+<button class="px-space-md py-space-sm rounded bg-primary text-on-primary hover:opacity-90 font-label-sm text-label-sm uppercase transition-all flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[16px]">how_to_reg</span> Primary Shortlist
+            </button>
+</div>
+</div>
+</div>
+</div>
+<!-- CANDIDATE #4 (SANA SHEIKH) -->
+<div class="bg-surface-container-lowest rounded-lg shadow-sm overflow-hidden relative" data-candidate="4">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-primary/60"></div>
+<div class="p-space-lg pl-space-xl flex flex-col gap-space-md">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded bg-surface-container-high flex flex-col items-center justify-center text-on-surface font-bold shrink-0">
+<span class="font-label-sm text-label-sm uppercase leading-none">Rank</span>
+<span class="font-headline-sm text-headline-sm leading-none mt-0.5">#02</span>
+</div>
+<div>
+<div class="flex flex-wrap items-center gap-space-xs">
+<!-- Blind Mode Title -->
+<span class="candidate-blind-title font-headline-md text-headline-md text-on-surface font-bold">
+                  Candidate ID: AYUSH-BLIND-3912
+                </span>
+<!-- Raw Mode Title -->
+<span class="candidate-raw-title hidden font-headline-md text-headline-md text-on-surface font-bold">
+                  Sana Sheikh <span class="font-body-md text-body-md text-on-surface-variant font-normal">— Private Engineering College, Indore</span>
+</span>
+<span class="candidate-raw-badge hidden px-space-xs py-0.5 bg-surface-container-high rounded text-on-surface-variant font-label-sm text-label-sm">
+                  GPA: 7.2 (Tier-3 College)
+                </span>
+<span class="candidate-blind-badge px-space-xs py-0.5 bg-surface-container text-on-surface-variant rounded font-label-sm text-label-sm uppercase">
+                  Blind Hash: 4e11••d9
+                </span>
+<span class="px-space-xs py-0.5 bg-surface-container-high text-primary font-label-sm text-label-sm rounded uppercase font-bold">
+                  Recommended
+                </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                Submission: <strong class="text-on-surface">"Multi-Phase Workplace Stress Reversal Framework"</strong> • Verified via Syllabus & Video Modular Breakdown
+              </p>
+</div>
+</div>
+<div class="flex items-center gap-space-md self-start lg:self-auto bg-surface-container-low px-space-md py-space-sm rounded-lg">
+<div class="text-right">
+<span class="font-headline-xl text-headline-xl text-primary font-bold tabular-nums">75%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">(3/4 Skills Matched)</span>
+</div>
+<div class="w-12 h-12 shrink-0 relative flex items-center justify-center">
+<svg class="w-12 h-12 transform -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-variant" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-primary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="75, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<span class="font-label-sm text-label-sm font-bold text-primary">3/4</span>
+</div>
+</div>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant block mb-1">Competency Evaluation Breakdown:</span>
+<div class="flex flex-wrap gap-space-xs">
+<span class="px-space-sm py-1 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Yoga Therapy (Verified)
+            </span>
+<span class="px-space-sm py-1 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Session Planning (Verified)
+            </span>
+<span class="px-space-sm py-1 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Stress Management (Verified)
+            </span>
+<span class="px-space-sm py-1 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1 line-through opacity-75">
+<span class="material-symbols-outlined text-[14px]">close</span> Breathing Techniques
+            </span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded p-space-md">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm uppercase font-bold mb-1">
+<span class="material-symbols-outlined text-[16px]">psychology</span>
+<span>Evaluator Rule Summary</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface">
+            "Developed a yoga therapy approach for stress management, with detailed session planning for a multi-day corporate wellness program."
+          </p>
+</div>
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Candidate meets shortlisting criteria threshold (≥75%)</span>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-space-sm rounded bg-surface-container-high text-on-surface hover:bg-surface-variant font-label-sm text-label-sm uppercase transition-all">
+              View Submission
+            </button>
+<button class="px-space-md py-space-sm rounded bg-primary-container text-on-primary-container hover:opacity-90 font-label-sm text-label-sm uppercase transition-all">
+              Shortlist (Recommended)
+            </button>
+<button class="px-space-md py-space-sm rounded bg-surface-container-high text-error hover:bg-error-container hover:text-on-error-container font-label-sm text-label-sm uppercase transition-all">
+              Reject
+            </button>
+</div>
+</div>
+</div>
+</div>
+<!-- CANDIDATE #3 (MEERA IYER) -->
+<div class="bg-surface-container-lowest rounded-lg shadow-sm overflow-hidden relative" data-candidate="3">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-surface-variant"></div>
+<div class="p-space-lg pl-space-xl flex flex-col gap-space-md">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded bg-surface-container-high flex flex-col items-center justify-center text-on-surface-variant font-bold shrink-0">
+<span class="font-label-sm text-label-sm uppercase leading-none">Rank</span>
+<span class="font-headline-sm text-headline-sm leading-none mt-0.5">#03</span>
+</div>
+<div>
+<div class="flex flex-wrap items-center gap-space-xs">
+<!-- Blind Mode Title -->
+<span class="candidate-blind-title font-headline-md text-headline-md text-on-surface font-bold">
+                  Candidate ID: AYUSH-BLIND-2041
+                </span>
+<!-- Raw Mode Title -->
+<span class="candidate-raw-title hidden font-headline-md text-headline-md text-on-surface font-bold">
+                  Meera Iyer <span class="font-body-md text-body-md text-on-surface-variant font-normal">— NIT Trichy</span>
+</span>
+<span class="candidate-raw-badge hidden px-space-xs py-0.5 bg-surface-container-high rounded text-on-surface-variant font-label-sm text-label-sm">
+                  GPA: 8.0 (Tier-1 Institute)
+                </span>
+<span class="candidate-blind-badge px-space-xs py-0.5 bg-surface-container text-on-surface-variant rounded font-label-sm text-label-sm uppercase">
+                  Blind Hash: 3c90••a7
+                </span>
+<span class="px-space-xs py-0.5 bg-surface-container text-on-surface-variant font-label-sm text-label-sm rounded uppercase">
+                  Threshold Review
+                </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                Submission: <strong class="text-on-surface">"Executive Yoga Therapy Concept Notes"</strong> • Theoretical Outline
+              </p>
+</div>
+</div>
+<div class="flex items-center gap-space-md self-start lg:self-auto bg-surface-container-low px-space-md py-space-sm rounded-lg">
+<div class="text-right">
+<span class="font-headline-xl text-headline-xl text-on-surface font-bold tabular-nums">50%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">(2/4 Skills Matched)</span>
+</div>
+<div class="w-12 h-12 shrink-0 relative flex items-center justify-center">
+<svg class="w-12 h-12 transform -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-variant" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-on-surface-variant" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="50, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<span class="font-label-sm text-label-sm font-bold text-on-surface-variant">2/4</span>
+</div>
+</div>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant block mb-1">Competency Evaluation Breakdown:</span>
+<div class="flex flex-wrap gap-space-xs">
+<span class="px-space-sm py-1 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Yoga Therapy (Verified)
+            </span>
+<span class="px-space-sm py-1 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Session Planning (Verified)
+            </span>
+<span class="px-space-sm py-1 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1 line-through opacity-75">
+<span class="material-symbols-outlined text-[14px]">close</span> Breathing Techniques
+            </span>
+<span class="px-space-sm py-1 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1 line-through opacity-75">
+<span class="material-symbols-outlined text-[14px]">close</span> Stress Management
+            </span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded p-space-md">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm uppercase font-bold mb-1">
+<span class="material-symbols-outlined text-[16px]">psychology</span>
+<span>Evaluator Rule Summary</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface">
+            "Outlined an initial yoga therapy concept along with basic session planning notes for general wellness clients."
+          </p>
+</div>
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Pedigree Shield: Candidate institutional ranking does not influence algorithmic score</span>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-space-sm rounded bg-surface-container-high text-on-surface hover:bg-surface-variant font-label-sm text-label-sm uppercase transition-all">
+              View Submission
+            </button>
+<button class="px-space-md py-space-sm rounded bg-surface-container-high text-on-surface hover:bg-surface-variant font-label-sm text-label-sm uppercase transition-all">
+              Shortlist
+            </button>
+<button class="px-space-md py-space-sm rounded bg-surface-container-high text-error hover:bg-error-container hover:text-on-error-container font-label-sm text-label-sm uppercase transition-all">
+              Reject
+            </button>
+</div>
+</div>
+</div>
+</div>
+<!-- CANDIDATE #2 (KARAN VERMA) -->
+<div class="bg-surface-container-lowest rounded-lg shadow-sm overflow-hidden relative" data-candidate="2">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-surface-variant"></div>
+<div class="p-space-lg pl-space-xl flex flex-col gap-space-md">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded bg-surface-container-high flex flex-col items-center justify-center text-on-surface-variant font-bold shrink-0">
+<span class="font-label-sm text-label-sm uppercase leading-none">Rank</span>
+<span class="font-headline-sm text-headline-sm leading-none mt-0.5">#04</span>
+</div>
+<div>
+<div class="flex flex-wrap items-center gap-space-xs">
+<!-- Blind Mode Title -->
+<span class="candidate-blind-title font-headline-md text-headline-md text-on-surface font-bold">
+                  Candidate ID: AYUSH-BLIND-1109
+                </span>
+<!-- Raw Mode Title -->
+<span class="candidate-raw-title hidden font-headline-md text-headline-md text-on-surface font-bold">
+                  Karan Verma <span class="font-body-md text-body-md text-on-surface-variant font-normal">— Delhi Technological University</span>
+</span>
+<span class="candidate-raw-badge hidden px-space-xs py-0.5 bg-surface-container-high rounded text-on-surface-variant font-label-sm text-label-sm">
+                  GPA: 8.6 (Tier-1 University)
+                </span>
+<span class="candidate-blind-badge px-space-xs py-0.5 bg-surface-container text-on-surface-variant rounded font-label-sm text-label-sm uppercase">
+                  Blind Hash: 7d42••f3
+                </span>
+<span class="px-space-xs py-0.5 bg-surface-container text-on-surface-variant font-label-sm text-label-sm rounded uppercase">
+                  Threshold Review
+                </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                Submission: <strong class="text-on-surface">"Pranayama Efficacy Literature in Corporate Enclaves"</strong> • Research Synthesis
+              </p>
+</div>
+</div>
+<div class="flex items-center gap-space-md self-start lg:self-auto bg-surface-container-low px-space-md py-space-sm rounded-lg">
+<div class="text-right">
+<span class="font-headline-xl text-headline-xl text-on-surface font-bold tabular-nums">50%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">(2/4 Skills Matched)</span>
+</div>
+<div class="w-12 h-12 shrink-0 relative flex items-center justify-center">
+<svg class="w-12 h-12 transform -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-variant" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-on-surface-variant" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="50, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<span class="font-label-sm text-label-sm font-bold text-on-surface-variant">2/4</span>
+</div>
+</div>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant block mb-1">Competency Evaluation Breakdown:</span>
+<div class="flex flex-wrap gap-space-xs">
+<span class="px-space-sm py-1 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Breathing Techniques (Verified)
+            </span>
+<span class="px-space-sm py-1 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Stress Management (Verified)
+            </span>
+<span class="px-space-sm py-1 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1 line-through opacity-75">
+<span class="material-symbols-outlined text-[14px]">close</span> Yoga Therapy
+            </span>
+<span class="px-space-sm py-1 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1 line-through opacity-75">
+<span class="material-symbols-outlined text-[14px]">close</span> Session Planning
+            </span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded p-space-md">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm uppercase font-bold mb-1">
+<span class="material-symbols-outlined text-[16px]">psychology</span>
+<span>Evaluator Rule Summary</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface">
+            "Focused on breathing techniques research for stress management applications in a general wellness context, without a formal instructional plan."
+          </p>
+</div>
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Missing direct yoga session syllabus modules</span>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-space-sm rounded bg-surface-container-high text-on-surface hover:bg-surface-variant font-label-sm text-label-sm uppercase transition-all">
+              View Submission
+            </button>
+<button class="px-space-md py-space-sm rounded bg-surface-container-high text-on-surface hover:bg-surface-variant font-label-sm text-label-sm uppercase transition-all">
+              Shortlist
+            </button>
+<button class="px-space-md py-space-sm rounded bg-surface-container-high text-error hover:bg-error-container hover:text-on-error-container font-label-sm text-label-sm uppercase transition-all">
+              Reject
+            </button>
+</div>
+</div>
+</div>
+</div>
+<!-- CANDIDATE #1 (ADITI SHARMA) -->
+<div class="bg-surface-container-lowest rounded-lg shadow-sm overflow-hidden relative opacity-95" data-candidate="1">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-error/50"></div>
+<div class="p-space-lg pl-space-xl flex flex-col gap-space-md">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded bg-surface-container-high flex flex-col items-center justify-center text-on-surface-variant font-bold shrink-0">
+<span class="font-label-sm text-label-sm uppercase leading-none">Rank</span>
+<span class="font-headline-sm text-headline-sm leading-none mt-0.5">#05</span>
+</div>
+<div>
+<div class="flex flex-wrap items-center gap-space-xs">
+<!-- Blind Mode Title -->
+<span class="candidate-blind-title font-headline-md text-headline-md text-on-surface font-bold">
+                  Candidate ID: AYUSH-BLIND-0824
+                </span>
+<!-- Raw Mode Title -->
+<span class="candidate-raw-title hidden font-headline-md text-headline-md text-on-surface font-bold">
+                  Aditi Sharma <span class="font-body-md text-body-md text-on-surface-variant font-normal">— IIT Bombay</span>
+</span>
+<span class="candidate-raw-badge hidden px-space-xs py-0.5 bg-surface-container-high rounded text-on-surface-variant font-label-sm text-label-sm">
+                  GPA: 9.1 (Premier Tier-1 IIT)
+                </span>
+<span class="candidate-blind-badge px-space-xs py-0.5 bg-surface-container text-on-surface-variant rounded font-label-sm text-label-sm uppercase">
+                  Blind Hash: 12f9••9b
+                </span>
+<span class="px-space-xs py-0.5 bg-surface-container-high text-error font-label-sm text-label-sm rounded uppercase">
+                  Below Threshold
+                </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                Submission: <strong class="text-on-surface">"Psychological Paradigms of Stress in Workplaces"</strong> • General Theory Thesis
+              </p>
+</div>
+</div>
+<div class="flex items-center gap-space-md self-start lg:self-auto bg-surface-container-low px-space-md py-space-sm rounded-lg">
+<div class="text-right">
+<span class="font-headline-xl text-headline-xl text-error font-bold tabular-nums">25%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">(1/4 Skills Matched)</span>
+</div>
+<div class="w-12 h-12 shrink-0 relative flex items-center justify-center">
+<svg class="w-12 h-12 transform -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-variant" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-error" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="25, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<span class="font-label-sm text-label-sm font-bold text-error">1/4</span>
+</div>
+</div>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant block mb-1">Competency Evaluation Breakdown:</span>
+<div class="flex flex-wrap gap-space-xs">
+<span class="px-space-sm py-1 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Stress Management (Verified)
+            </span>
+<span class="px-space-sm py-1 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1 line-through opacity-75">
+<span class="material-symbols-outlined text-[14px]">close</span> Yoga Therapy
+            </span>
+<span class="px-space-sm py-1 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1 line-through opacity-75">
+<span class="material-symbols-outlined text-[14px]">close</span> Session Planning
+            </span>
+<span class="px-space-sm py-1 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1 line-through opacity-75">
+<span class="material-symbols-outlined text-[14px]">close</span> Breathing Techniques
+            </span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded p-space-md">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm uppercase font-bold mb-1">
+<span class="material-symbols-outlined text-[16px]">psychology</span>
+<span>Evaluator Rule Summary</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface">
+            "Submission focused on general stress management theory from a psychological perspective, without direct yoga instruction or physiological breathing protocol."
+          </p>
+</div>
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Premier institution prestige does not override missing core practical requirements</span>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-space-sm rounded bg-surface-container-high text-on-surface hover:bg-surface-variant font-label-sm text-label-sm uppercase transition-all">
+              View Submission
+            </button>
+<button class="px-space-md py-space-sm rounded bg-surface-container-high text-on-surface hover:bg-surface-variant font-label-sm text-label-sm uppercase transition-all">
+              Shortlist
+            </button>
+<button class="px-space-md py-space-sm rounded bg-error text-on-error hover:opacity-90 font-label-sm text-label-sm uppercase transition-all">
+              Reject
+            </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Statutory Institutional Verification Audit Panel -->
+<section class="bg-surface-container-low rounded-lg p-space-lg shadow-sm mb-space-lg">
+<div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded bg-surface-container-highest flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[24px]">policy</span>
+</div>
+<div>
+<h4 class="font-label-lg text-label-lg text-primary uppercase">National Ayush Skill Registry • Cryptographic Audit Standard</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            All 5 applicant submissions have been stamped with SHA-256 integrity hashes on submission receipt. Evaluator AI decisions are subject to independent Human-in-the-Loop review upon applicant grievance.
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<div class="text-right hidden sm:block">
+<span class="font-label-sm text-label-sm block text-on-surface-variant uppercase">Registry Node</span>
+<span class="font-label-sm text-label-sm font-bold text-primary">AYUSH-NODE-DEL-04</span>
+</div>
+<button class="px-space-md py-space-sm rounded bg-surface-container-high text-on-surface hover:bg-surface-variant font-label-sm text-label-sm uppercase transition-all flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">receipt_long</span> Audit Trail
+        </button>
+</div>
+</div>
+</section>
+<!-- Hidden Original Context Reference for Pipeline Integration -->
+<div class="hidden">
+<img alt="Original Interface State Reference" class="hidden" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFW7X36aWU1wQfY0UOZrBX1eB-QXlzKByRcjI0kRXGah66rICYEYMA9TR4wwet4osUY_d7dxskQqmUwu87qgAfwokVVgoLPKkn__eNqgM3eaJvUy1mqTgTZZbFktbdTXgHl_Xl0BVtMKrTjmSLbOTpVKjXgQqWXqW8RbRZhOTXGlWFf3VpR7K6iHVSEnWP5qYN77us0i46HU71ExhkZcbbL1v9pLQTNg7sA7DplJMjDcH8ebZ4AkMl0Wx_LicRRwoaEcg"/>
+</div>
+<script>
+    function setEvaluationMode(mode) {
+      const blindBtn = document.getElementById('mode-blind-btn');
+      const rawBtn = document.getElementById('mode-raw-btn');
+      const blindBanner = document.getElementById('blind-mode-banner');
+      const rawBanner = document.getElementById('raw-mode-banner');
+      
+      const blindTitles = document.querySelectorAll('.candidate-blind-title');
+      const rawTitles = document.querySelectorAll('.candidate-raw-title');
+      const blindBadges = document.querySelectorAll('.candidate-blind-badge');
+      const rawBadges = document.querySelectorAll('.candidate-raw-badge');
+
+      if (mode === 'raw') {
+        // Toggle Buttons
+        blindBtn.className = 'flex items-center gap-space-xs px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-all font-label-lg text-label-lg';
+        rawBtn.className = 'flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-secondary text-on-secondary shadow-sm transition-all font-label-lg text-label-lg';
+        
+        // Banners
+        blindBanner.classList.add('hidden');
+        rawBanner.classList.remove('hidden');
+        rawBanner.classList.add('flex');
+
+        // Reveal Metadata
+        blindTitles.forEach(el => el.classList.add('hidden'));
+        rawTitles.forEach(el => el.classList.remove('hidden'));
+
+        blindBadges.forEach(el => el.classList.add('hidden'));
+        rawBadges.forEach(el => el.classList.remove('hidden'));
+      } else {
+        // Toggle Buttons
+        rawBtn.className = 'flex items-center gap-space-xs px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-all font-label-lg text-label-lg';
+        blindBtn.className = 'flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-primary text-on-primary shadow-sm transition-all font-label-lg text-label-lg';
+
+        // Banners
+        rawBanner.classList.add('hidden');
+        rawBanner.classList.remove('flex');
+        blindBanner.classList.remove('hidden');
+
+        // Hide Metadata
+        blindTitles.forEach(el => el.classList.remove('hidden'));
+        rawTitles.forEach(el => el.classList.add('hidden'));
+
+        blindBadges.forEach(el => el.classList.remove('hidden'));
+        rawBadges.forEach(el => el.classList.add('hidden'));
+      }
+    }
+  </script>
+</div></div></main></div></body></html>

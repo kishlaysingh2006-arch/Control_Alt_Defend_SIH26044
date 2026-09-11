@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Public+Sans:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-primary-container":"#84c39b","on-secondary-fixed":"#331200","on-secondary":"#ffffff","inverse-surface":"#2d3133","on-tertiary-container":"#adb4ce","on-error":"#ffffff","on-tertiary":"#ffffff","tertiary-fixed-dim":"#bec6e0","background":"#f7f9fb","tertiary-container":"#3f465b","tertiary":"#283044","outline":"#707971","on-background":"#191c1e","inverse-primary":"#95d4ac","primary-fixed":"#b0f1c7","primary":"#003820","error":"#ba1a1a","surface-variant":"#e0e3e5","on-tertiary-fixed-variant":"#3f465c","inverse-on-surface":"#eff1f3","on-primary-fixed-variant":"#0f5132","on-tertiary-fixed":"#131b2e","secondary-container":"#fd8a42","on-surface-variant":"#404942","surface-dim":"#d8dadc","surface-container-highest":"#e0e3e5","primary-container":"#0f5132","on-primary-fixed":"#002111","on-secondary-fixed-variant":"#763300","primary-fixed-dim":"#95d4ac","tertiary-fixed":"#dae2fd","on-primary":"#ffffff","surface-bright":"#f7f9fb","surface-tint":"#2d6a48","on-surface":"#191c1e","secondary-fixed":"#ffdbca","surface":"#f7f9fb","secondary":"#9b4500","on-error-container":"#93000a","secondary-fixed-dim":"#ffb68e","outline-variant":"#c0c9c0","surface-container-low":"#f2f4f6","surface-container-high":"#e6e8ea","on-secondary-container":"#682c00","surface-container":"#eceef0","error-container":"#ffdad6","surface-container-lowest":"#ffffff"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-lg":"1.5rem","space-xs":"0.25rem","margin":"2rem","gutter":"1.25rem","space-xl":"2.5rem","space-sm":"0.5rem","space-md":"1rem"},fontFamily:{"label-lg":["Public Sans"],"body-md":["Inter"],"display-lg":["Public Sans"],"headline-md":["Public Sans"],"label-md":["Public Sans"],"body-sm":["Inter"],"headline-xl-mobile":["Public Sans"],"headline-xl":["Public Sans"],"headline-lg":["Public Sans"],"tabular-data":["Inter"],"display-lg-mobile":["Public Sans"],"title-md":["Public Sans"],"headline-sm":["Public Sans"],"body-lg":["Inter"],"label-sm":["Public Sans"]},fontSize:{"label-lg":["13px",{"lineHeight":"16px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"display-lg":["40px",{"lineHeight":"48px","fontWeight":"700"}],"headline-md":["20px",{"lineHeight":"28px","fontWeight":"600"}],"label-md":["11px",{"lineHeight":"14px","letterSpacing":"0.06em","fontWeight":"700"}],"body-sm":["12px",{"lineHeight":"18px","fontWeight":"400"}],"headline-xl-mobile":["24px",{"lineHeight":"32px","fontWeight":"700"}],"headline-xl":["32px",{"lineHeight":"40px","fontWeight":"700"}],"headline-lg":["24px",{"lineHeight":"32px","fontWeight":"600"}],"tabular-data":["14px",{"lineHeight":"20px","fontWeight":"600"}],"display-lg-mobile":["28px",{"lineHeight":"36px","fontWeight":"700"}],"title-md":["14px",{"lineHeight":"20px","letterSpacing":"0.05em","fontWeight":"700"}],"headline-sm":["16px",{"lineHeight":"24px","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"label-sm":["10px",{"lineHeight":"12px","letterSpacing":"0.08em","fontWeight":"700"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface"><header class="fixed top-0 w-full z-50 bg-surface shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="w-full h-1 flex"><div class="w-1/3 bg-[#FF9933]"></div><div class="w-1/3 bg-surface-container-lowest"></div><div class="w-1/3 bg-[#138808]"></div></div><div class="bg-surface-container-low"><div class="max-w-7xl mx-auto px-gutter py-space-xs flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant"><div class="flex items-center gap-space-sm"><span>GOVERNMENT OF INDIA</span><span>|</span><span>MINISTRY OF AYUSH</span><span>|</span><span>SMART INDIA HACKATHON 2024</span></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs bg-primary-fixed text-on-primary-fixed px-space-xs py-0.5 rounded-DEFAULT font-label-sm text-label-sm uppercase tracking-wider"><span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span><span>Blind Review Protocol Active: PII Scrubbed</span></div><div class="hidden sm:flex items-center gap-space-xs text-on-surface-variant"><span>A+</span><span>A-</span><span class="font-bold text-on-surface">EN</span></div></div></div></div><div class="bg-surface-container-lowest"><div class="h-20 max-w-7xl mx-auto px-gutter flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="Ministry of AYUSH Blind Merit Engine Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W6JDvbSwhpm8FgjnimXzRixbirFztk5N2kQJrR8qZ3g9Uw53Q-Z5f3vkmJEX4YvTxpB-0J79N-VkJkcj2e39bhY_fj8Cxt522Ug4liIzWdBAdxMvkGFhvunaFm7KMUQyMsZkqj1EYVgDafAXUPX3AqLGvn3AQb9llQjKsaZfSriUbtfBLraX9k6cCKq4GEpJtkD4CxDdWsTdQCE7yNFNG5aPaL4lpPDCKNCO1BxbagafcEjRVczfa7gia0"/><div class="flex flex-col"><span class="font-title-md text-title-md text-primary uppercase">Blind Merit & Skill Evaluation Portal</span><span class="font-body-sm text-body-sm text-on-surface-variant">Ministry of Ayush • Government of India | National Industry-Academia Collaborative Skill Portal</span></div></div><div class="flex items-center gap-space-md"><div class="hidden lg:flex items-center gap-space-xs bg-surface-container-low px-space-sm py-space-xs rounded-lg text-on-surface-variant"><span class="font-label-sm text-label-sm uppercase text-on-surface">NSQF Aligned Registry</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div><div class="bg-primary text-on-primary"><div class="max-w-7xl mx-auto px-gutter flex items-center justify-between"><nav class="flex items-center" data-active-classes="bg-primary-container text-on-primary-container"><a class="px-space-md py-space-sm font-label-lg text-label-lg text-on-primary-container transition-colors" data-path="home" href="#">Home</a><a aria-current="page" class="px-space-md py-space-sm font-label-lg transition-colors bg-primary-container text-on-primary-container" data-path="available-bounties" href="#">Available Bounties</a><a class="px-space-md py-space-sm font-label-lg text-label-lg text-on-primary-container transition-colors" data-path="recruiter-dashboard" href="#">Recruiter Dashboard</a><a class="px-space-md py-space-sm font-label-lg text-label-lg text-on-primary-container transition-colors" data-path="predictive-curriculum-delta" href="#">Predictive Curriculum Delta</a><a class="px-space-md py-space-sm font-label-lg text-label-lg text-on-primary-container transition-colors" data-path="documentation" href="#">Help & Docs</a></nav><div class="font-label-sm text-label-sm text-on-primary-container uppercase tracking-wider hidden md:block">Portal Ref: SIH-26044 / Control_Alt_Defend</div></div></div></header><main class="w-full pt-36 bg-surface"><div class="max-w-7xl mx-auto px-gutter py-space-sm bg-surface-container-low mb-space-md font-label-sm text-label-sm text-on-surface-variant flex items-center gap-space-xs"><span class="material-symbols-outlined text-[14px]">account_balance</span><span>AYUSH National Skill Registry</span><span>/</span><span class="text-primary font-bold uppercase">Blind Merit Evaluation Gateway</span></div><div class="max-w-7xl mx-auto px-gutter"><div class="flex flex-col w-full">
+<!-- Top Statutory Alert Strip -->
+<div class="w-full bg-surface-container-lowest p-space-md shadow-sm mb-space-md flex flex-col md:flex-row items-start md:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="p-1.5 bg-primary text-on-primary rounded-DEFAULT flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</span>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-primary">Blind Review Protocol v2.4 (SHA-256 Engine)</span>
+<span class="px-space-xs py-0.5 bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm uppercase rounded-DEFAULT">Statutory Active</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">All attachments and code samples undergo automatic heuristic stripping of applicant name, college crest, and metadata prior to expert evaluation.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-md text-on-surface font-label-sm text-label-sm self-end md:self-auto">
+<span class="flex items-center gap-1 text-primary"><span class="w-2 h-2 rounded-full bg-primary animate-ping"></span> Live Evaluation Cycle 2024-Q4</span>
+<span class="text-on-surface-variant">|</span>
+<span class="text-on-surface-variant">Active Pool: <strong class="text-on-surface font-tabular-data text-tabular-data">₹3,45,000 INR</strong></span>
+</div>
+</div>
+<!-- Header & Context Display -->
+<div class="w-full bg-surface-container-lowest p-space-lg shadow-sm mb-space-lg">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md">
+<div class="max-w-3xl">
+<div class="flex items-center gap-space-xs text-primary font-label-md text-label-md uppercase mb-space-xs">
+<span class="material-symbols-outlined text-[15px]">clinical_notes</span>
+<span>Ministry of Ayush National Skill Registry • SIH-26044 Micro-Grants</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-primary mb-space-xs tracking-tight">Available Industry Micro-Bounties</h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Solve real-world traditional medicine, clinical workflow, and wellness operational challenges. Submissions are evaluated 100% blind without revealing your university or identity to promote absolute academic meritocracy.
+        </p>
+</div>
+<!-- Key Counters Summary Bento -->
+<div class="flex items-center gap-space-md bg-surface-container-low p-space-sm rounded-DEFAULT">
+<div class="px-space-sm text-center">
+<span class="block font-headline-lg text-headline-lg text-primary font-tabular-data">48</span>
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">Active Bounties</span>
+</div>
+<div class="w-px h-8 bg-surface-variant"></div>
+<div class="px-space-sm text-center">
+<span class="block font-headline-lg text-headline-lg text-secondary font-tabular-data">630+</span>
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">Blind Submissions</span>
+</div>
+<div class="w-px h-8 bg-surface-variant"></div>
+<div class="px-space-sm text-center">
+<span class="block font-headline-lg text-headline-lg text-primary-container font-tabular-data">94.2%</span>
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">Evaluator SLA</span>
+</div>
+</div>
+</div>
+<!-- Filter & Search Toolbar Strip -->
+<div class="mt-space-lg pt-space-md bg-surface-container-low p-space-md rounded-DEFAULT flex flex-col gap-space-md">
+<div class="flex flex-col lg:flex-row items-stretch lg:items-center gap-space-sm justify-between">
+<!-- Search input -->
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant text-[20px]">search</span>
+<input class="w-full bg-surface-container-lowest text-on-surface pl-10 pr-space-md py-2 text-body-md font-body-md rounded-DEFAULT focus:outline-none focus:ring-1 focus:ring-primary shadow-sm" placeholder="Search bounties by skill, sector, or keyword..." type="text"/>
+</div>
+<!-- Dropdowns -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="flex items-center gap-1 bg-surface-container-lowest px-3 py-2 rounded-DEFAULT shadow-sm text-on-surface text-body-sm font-body-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Level:</span>
+<select class="bg-transparent text-on-surface font-title-md text-title-md focus:outline-none cursor-pointer">
+<option>All NSQF Levels (3 - 5)</option>
+<option>NSQF Level 3 (Assistant)</option>
+<option>NSQF Level 4 (Technician/Associate)</option>
+<option>NSQF Level 5 (Specialist/Supervisor)</option>
+</select>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-lowest px-3 py-2 rounded-DEFAULT shadow-sm text-on-surface text-body-sm font-body-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Status:</span>
+<select class="bg-transparent text-on-surface font-title-md text-title-md focus:outline-none cursor-pointer">
+<option>Open for Submissions</option>
+<option>Under Blind Review</option>
+<option>Awarded / Archived</option>
+</select>
+</div>
+<button class="bg-primary text-on-primary px-space-md py-2 rounded-DEFAULT font-label-lg text-label-lg hover:bg-primary-container transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">filter_alt</span>
+<span>Apply Filters</span>
+</button>
+</div>
+</div>
+<!-- Sector Filter Tabs -->
+<div class="flex flex-wrap items-center gap-space-xs pt-space-xs">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant mr-space-xs">Sector Track:</span>
+<button class="px-space-sm py-1 rounded-DEFAULT bg-primary text-on-primary font-label-sm text-label-sm uppercase shadow-sm">All AYUSH (48)</button>
+<button class="px-space-sm py-1 rounded-DEFAULT bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-sm text-label-sm uppercase shadow-sm">Ayurveda Pharmacy (14)</button>
+<button class="px-space-sm py-1 rounded-DEFAULT bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-sm text-label-sm uppercase shadow-sm">Yoga & Naturopathy (16)</button>
+<button class="px-space-sm py-1 rounded-DEFAULT bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-sm text-label-sm uppercase shadow-sm">Unani & Siddha (9)</button>
+<button class="px-space-sm py-1 rounded-DEFAULT bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-sm text-label-sm uppercase shadow-sm">Clinical Documentation (9)</button>
+</div>
+</div>
+</div>
+<!-- Primary Content Grid: Bounties + Blind Protocol Sidebar -->
+<div class="w-full grid grid-cols-1 lg:grid-cols-12 gap-gutter mb-space-xl">
+<!-- Bounty Cards Column (8 Cols) -->
+<div class="lg:col-span-8 flex flex-col gap-space-md">
+<!-- Card 1: Sanjivani Herbal Foundation -->
+<div class="bg-surface-container-lowest p-space-lg shadow-sm rounded-DEFAULT flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="flex flex-wrap items-center justify-between gap-space-sm mb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-7 h-7 rounded-DEFAULT bg-primary text-on-primary flex items-center justify-center font-tabular-data text-tabular-data">#01</span>
+<span class="font-title-md text-title-md text-primary font-bold">Sanjivani Herbal Foundation</span>
+<span class="flex items-center gap-0.5 px-space-xs py-0.5 bg-primary-fixed text-on-primary-fixed text-label-sm font-label-sm rounded-DEFAULT uppercase">
+<span class="material-symbols-outlined text-[13px]">verified</span> Verified Partner
+              </span>
+</div>
+<span class="px-space-xs py-0.5 bg-surface-container-high text-on-surface font-label-sm text-label-sm uppercase rounded-DEFAULT">NSQF Level 4</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-space-xs hover:text-primary transition-colors cursor-pointer">
+            Compile a Medicinal Plant Reference Guide for a Community Herbal Garden
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md leading-relaxed">
+            Develop a comprehensive reference guide for medicinal plants in a community herbal garden. The guide should include plant identification, active phytoconstituents, traditional Ayurvedic pharmacology, cultivation standards, and clinical dosage safety.
+          </p>
+<!-- Skill Badges -->
+<div class="flex flex-wrap gap-space-xs mb-space-md">
+<span class="px-space-xs py-1 bg-surface-container-low text-on-surface font-label-sm text-label-sm rounded-DEFAULT flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-primary">eco</span> Medicinal Plant Identification
+            </span>
+<span class="px-space-xs py-1 bg-surface-container-low text-on-surface font-label-sm text-label-sm rounded-DEFAULT flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-primary">menu_book</span> Ayurvedic Pharmacology
+            </span>
+<span class="px-space-xs py-1 bg-surface-container-low text-on-surface font-label-sm text-label-sm rounded-DEFAULT flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-primary">description</span> Documentation
+            </span>
+<span class="px-space-xs py-1 bg-surface-container-low text-on-surface font-label-sm text-label-sm rounded-DEFAULT flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-primary">science</span> Dravyaguna Vijnana
+            </span>
+</div>
+</div>
+<!-- Metric and Action Strip -->
+<div class="pt-space-md bg-surface-container-low -mx-space-lg -mb-space-lg p-space-md flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md">
+<div class="flex flex-wrap items-center gap-space-md text-body-sm font-body-sm">
+<div>
+<span class="block font-label-sm text-label-sm uppercase text-on-surface-variant">Bounty Honorarium</span>
+<span class="font-headline-sm text-headline-sm text-primary font-tabular-data">₹25,000</span>
+</div>
+<div class="w-px h-6 bg-surface-variant"></div>
+<div>
+<span class="block font-label-sm text-label-sm uppercase text-on-surface-variant">Blind Submissions</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-tabular-data">18 Candidates</span>
+</div>
+<div class="w-px h-6 bg-surface-variant"></div>
+<div>
+<span class="block font-label-sm text-label-sm uppercase text-on-surface-variant">Time Remaining</span>
+<span class="font-headline-sm text-headline-sm text-secondary font-tabular-data">5 days left</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs w-full sm:w-auto">
+<button class="flex-1 sm:flex-none px-space-md py-2 bg-surface-container hover:bg-surface-variant text-on-surface font-label-lg text-label-lg rounded-DEFAULT transition-colors">
+              View Brief
+            </button>
+<button class="flex-1 sm:flex-none px-space-md py-2 bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg rounded-DEFAULT transition-colors flex items-center justify-center gap-1 shadow-sm">
+<span>Submit Work (Blind Portal)</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 2: Amrita Ayush Wellness Center -->
+<div class="bg-surface-container-lowest p-space-lg shadow-sm rounded-DEFAULT flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="flex flex-wrap items-center justify-between gap-space-sm mb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-7 h-7 rounded-DEFAULT bg-primary text-on-primary flex items-center justify-center font-tabular-data text-tabular-data">#02</span>
+<span class="font-title-md text-title-md text-primary font-bold">Amrita Ayush Wellness Center</span>
+<span class="flex items-center gap-0.5 px-space-xs py-0.5 bg-primary-fixed text-on-primary-fixed text-label-sm font-label-sm rounded-DEFAULT uppercase">
+<span class="material-symbols-outlined text-[13px]">verified</span> Verified Partner
+              </span>
+</div>
+<span class="px-space-xs py-0.5 bg-surface-container-high text-on-surface font-label-sm text-label-sm uppercase rounded-DEFAULT">NSQF Level 4</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-space-xs hover:text-primary transition-colors cursor-pointer">
+            Design a Patient Wellness Dashboard for a Panchakarma Clinic
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md leading-relaxed">
+            Design a comprehensive patient wellness tracking system for a Panchakarma clinic. The dashboard should track patient vitals, preparatory Snehana/Swedana phases, post-treatment dietary guidelines, and therapy outcome metrics.
+          </p>
+<!-- Skill Badges -->
+<div class="flex flex-wrap gap-space-xs mb-space-md">
+<span class="px-space-xs py-1 bg-surface-container-low text-on-surface font-label-sm text-label-sm rounded-DEFAULT flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-primary">spa</span> Panchakarma Protocol
+            </span>
+<span class="px-space-xs py-1 bg-surface-container-low text-on-surface font-label-sm text-label-sm rounded-DEFAULT flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-primary">dashboard</span> Patient Documentation
+            </span>
+<span class="px-space-xs py-1 bg-surface-container-low text-on-surface font-label-sm text-label-sm rounded-DEFAULT flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-primary">monitor_heart</span> Wellness Tracking
+            </span>
+<span class="px-space-xs py-1 bg-surface-container-low text-on-surface font-label-sm text-label-sm rounded-DEFAULT flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-primary">analytics</span> Therapy Outcomes
+            </span>
+</div>
+</div>
+<!-- Metric and Action Strip -->
+<div class="pt-space-md bg-surface-container-low -mx-space-lg -mb-space-lg p-space-md flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md">
+<div class="flex flex-wrap items-center gap-space-md text-body-sm font-body-sm">
+<div>
+<span class="block font-label-sm text-label-sm uppercase text-on-surface-variant">Bounty Honorarium</span>
+<span class="font-headline-sm text-headline-sm text-primary font-tabular-data">₹40,000</span>
+</div>
+<div class="w-px h-6 bg-surface-variant"></div>
+<div>
+<span class="block font-label-sm text-label-sm uppercase text-on-surface-variant">Blind Submissions</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-tabular-data">12 Candidates</span>
+</div>
+<div class="w-px h-6 bg-surface-variant"></div>
+<div>
+<span class="block font-label-sm text-label-sm uppercase text-on-surface-variant">Time Remaining</span>
+<span class="font-headline-sm text-headline-sm text-secondary font-tabular-data">8 days left</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs w-full sm:w-auto">
+<button class="flex-1 sm:flex-none px-space-md py-2 bg-surface-container hover:bg-surface-variant text-on-surface font-label-lg text-label-lg rounded-DEFAULT transition-colors">
+              View Brief
+            </button>
+<button class="flex-1 sm:flex-none px-space-md py-2 bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg rounded-DEFAULT transition-colors flex items-center justify-center gap-1 shadow-sm">
+<span>Submit Work (Blind Portal)</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 3: Prana Wellness Retreats -->
+<div class="bg-surface-container-lowest p-space-lg shadow-sm rounded-DEFAULT flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="flex flex-wrap items-center justify-between gap-space-sm mb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-7 h-7 rounded-DEFAULT bg-primary text-on-primary flex items-center justify-center font-tabular-data text-tabular-data">#03</span>
+<span class="font-title-md text-title-md text-primary font-bold">Prana Wellness Retreats</span>
+<span class="flex items-center gap-0.5 px-space-xs py-0.5 bg-surface-container-high text-on-surface font-label-sm text-label-sm rounded-DEFAULT uppercase">
+<span class="material-symbols-outlined text-[13px]">business</span> Corporate Wellness Partner
+              </span>
+</div>
+<span class="px-space-xs py-0.5 bg-surface-container-high text-on-surface font-label-sm text-label-sm uppercase rounded-DEFAULT">NSQF Level 5</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-space-xs hover:text-primary transition-colors cursor-pointer">
+            Develop a Yoga Therapy Plan for Workplace Stress Management
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md leading-relaxed">
+            Create a structured yoga therapy program designed for corporate wellness. The plan should include detailed session planning, breathing techniques (Nadi Shodhana, Bhramari), chair yoga modifications, and heart-rate variability recovery tracking.
+          </p>
+<!-- Skill Badges -->
+<div class="flex flex-wrap gap-space-xs mb-space-md">
+<span class="px-space-xs py-1 bg-surface-container-low text-on-surface font-label-sm text-label-sm rounded-DEFAULT flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-primary">self_improvement</span> Yoga Therapy
+            </span>
+<span class="px-space-xs py-1 bg-surface-container-low text-on-surface font-label-sm text-label-sm rounded-DEFAULT flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-primary">event_note</span> Session Planning
+            </span>
+<span class="px-space-xs py-1 bg-surface-container-low text-on-surface font-label-sm text-label-sm rounded-DEFAULT flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-primary">air</span> Breathing Techniques
+            </span>
+<span class="px-space-xs py-1 bg-surface-container-low text-on-surface font-label-sm text-label-sm rounded-DEFAULT flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-primary">psychology</span> Stress Management
+            </span>
+</div>
+</div>
+<!-- Metric and Action Strip -->
+<div class="pt-space-md bg-surface-container-low -mx-space-lg -mb-space-lg p-space-md flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md">
+<div class="flex flex-wrap items-center gap-space-md text-body-sm font-body-sm">
+<div>
+<span class="block font-label-sm text-label-sm uppercase text-on-surface-variant">Bounty Honorarium</span>
+<span class="font-headline-sm text-headline-sm text-primary font-tabular-data">₹30,000</span>
+</div>
+<div class="w-px h-6 bg-surface-variant"></div>
+<div>
+<span class="block font-label-sm text-label-sm uppercase text-on-surface-variant">Blind Submissions</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-tabular-data">24 Candidates</span>
+</div>
+<div class="w-px h-6 bg-surface-variant"></div>
+<div>
+<span class="block font-label-sm text-label-sm uppercase text-on-surface-variant">Time Remaining</span>
+<span class="font-headline-sm text-headline-sm text-error font-tabular-data">3 days left</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs w-full sm:w-auto">
+<button class="flex-1 sm:flex-none px-space-md py-2 bg-surface-container hover:bg-surface-variant text-on-surface font-label-lg text-label-lg rounded-DEFAULT transition-colors">
+              View Brief
+            </button>
+<button class="flex-1 sm:flex-none px-space-md py-2 bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg rounded-DEFAULT transition-colors flex items-center justify-center gap-1 shadow-sm">
+<span>Submit Work (Blind Portal)</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 4: National Institute of Ayurveda Hospital -->
+<div class="bg-surface-container-lowest p-space-lg shadow-sm rounded-DEFAULT flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="flex flex-wrap items-center justify-between gap-space-sm mb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-7 h-7 rounded-DEFAULT bg-primary text-on-primary flex items-center justify-center font-tabular-data text-tabular-data">#04</span>
+<span class="font-title-md text-title-md text-primary font-bold">National Institute of Ayurveda Hospital</span>
+<span class="flex items-center gap-0.5 px-space-xs py-0.5 bg-primary-fixed text-on-primary-fixed text-label-sm font-label-sm rounded-DEFAULT uppercase">
+<span class="material-symbols-outlined text-[13px]">account_balance</span> Apex Body
+              </span>
+</div>
+<span class="px-space-xs py-0.5 bg-surface-container-high text-on-surface font-label-sm text-label-sm uppercase rounded-DEFAULT">NSQF Level 5</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-space-xs hover:text-primary transition-colors cursor-pointer">
+            Standardized SOP for Kshara Sutra Preparation & Quality Control
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md leading-relaxed">
+            Formulate an institutional standard operating procedure adhering to Ayurvedic Pharmacopoeia of India (API) guidelines for surgical thread coating, alkaline ash extraction, and shelf-life assessment.
+          </p>
+<!-- Skill Badges -->
+<div class="flex flex-wrap gap-space-xs mb-space-md">
+<span class="px-space-xs py-1 bg-surface-container-low text-on-surface font-label-sm text-label-sm rounded-DEFAULT flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-primary">medical_services</span> Kshara Karma
+            </span>
+<span class="px-space-xs py-1 bg-surface-container-low text-on-surface font-label-sm text-label-sm rounded-DEFAULT flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-primary">fact_check</span> SOP Formulation
+            </span>
+<span class="px-space-xs py-1 bg-surface-container-low text-on-surface font-label-sm text-label-sm rounded-DEFAULT flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-primary">verified</span> Quality Assurance
+            </span>
+<span class="px-space-xs py-1 bg-surface-container-low text-on-surface font-label-sm text-label-sm rounded-DEFAULT flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-primary">health_and_safety</span> Clinical Safety
+            </span>
+</div>
+</div>
+<!-- Metric and Action Strip -->
+<div class="pt-space-md bg-surface-container-low -mx-space-lg -mb-space-lg p-space-md flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md">
+<div class="flex flex-wrap items-center gap-space-md text-body-sm font-body-sm">
+<div>
+<span class="block font-label-sm text-label-sm uppercase text-on-surface-variant">Bounty Honorarium</span>
+<span class="font-headline-sm text-headline-sm text-primary font-tabular-data">₹35,000</span>
+</div>
+<div class="w-px h-6 bg-surface-variant"></div>
+<div>
+<span class="block font-label-sm text-label-sm uppercase text-on-surface-variant">Blind Submissions</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-tabular-data">9 Candidates</span>
+</div>
+<div class="w-px h-6 bg-surface-variant"></div>
+<div>
+<span class="block font-label-sm text-label-sm uppercase text-on-surface-variant">Time Remaining</span>
+<span class="font-headline-sm text-headline-sm text-primary font-tabular-data">12 days left</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs w-full sm:w-auto">
+<button class="flex-1 sm:flex-none px-space-md py-2 bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg rounded-DEFAULT transition-colors flex items-center justify-center gap-1 shadow-sm">
+<span>Submit Work (Blind Portal)</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Sidebar: Blind Submission Guidelines & System Status (4 Cols) -->
+<div class="lg:col-span-4 flex flex-col gap-space-md">
+<!-- Regulatory Protocol Card -->
+<div class="bg-surface-container-lowest p-space-lg shadow-sm rounded-DEFAULT">
+<div class="flex items-center gap-space-xs mb-space-sm text-secondary">
+<span class="material-symbols-outlined text-[20px]">shield_person</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Active Blind Guidelines</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+          To comply with Ministry of AYUSH Gazette Norms and SIH-26044 regulations, all micro-bounty entries are processed through the zero-knowledge merit gateway:
+        </p>
+<div class="flex flex-col gap-space-sm mb-space-md">
+<div class="flex items-start gap-space-xs p-space-xs bg-surface-container-low rounded-DEFAULT">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">cleaning_services</span>
+<div>
+<strong class="font-title-md text-title-md text-on-surface block">Automated Metadata Scrub</strong>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Author properties, institution headers, email tags, and system EXIF are scrubbed immediately at upload.</span>
+</div>
+</div>
+<div class="flex items-start gap-space-xs p-space-xs bg-surface-container-low rounded-DEFAULT">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">fingerprint</span>
+<div>
+<strong class="font-title-md text-title-md text-on-surface block">SHA-256 Merit Tokenization</strong>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Each submission is assigned an irreversible identifier (e.g., <code class="font-mono text-primary">#AYU-9842X</code>) seen by industry evaluators.</span>
+</div>
+</div>
+<div class="flex items-start gap-space-xs p-space-xs bg-surface-container-low rounded-DEFAULT">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">gavel</span>
+<div>
+<strong class="font-title-md text-title-md text-on-surface block">Double-Blind Scoring</strong>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Three independent AYUSH council experts rate each rubric facet without mutual consensus view.</span>
+</div>
+</div>
+</div>
+<div class="p-space-sm bg-secondary-fixed text-on-secondary-fixed text-label-sm font-label-sm rounded-DEFAULT flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] mt-0.5">warning</span>
+<span>WARNING: Any document containing embedded self-identifying markers, watermarks, or university letterheads will result in immediate algorithmic disqualification.</span>
+</div>
+</div>
+<!-- Live Pipeline Telemetry Bento -->
+<div class="bg-surface-container-lowest p-space-lg shadow-sm rounded-DEFAULT">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-title-md text-title-md text-primary uppercase">Evaluation Telemetry</span>
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant mb-1">
+<span>Ayurveda Track Review Speed</span>
+<span class="font-tabular-data text-on-surface">1.8 Days Avg</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-DEFAULT overflow-hidden">
+<div class="bg-primary h-full w-[85%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant mb-1">
+<span>Yoga & Naturopathy Review Speed</span>
+<span class="font-tabular-data text-on-surface">2.4 Days Avg</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-DEFAULT overflow-hidden">
+<div class="bg-primary h-full w-[72%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant mb-1">
+<span>Unani & Siddha Track Speed</span>
+<span class="font-tabular-data text-on-surface">3.1 Days Avg</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-DEFAULT overflow-hidden">
+<div class="bg-secondary h-full w-[64%]"></div>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span>Active Evaluators Online:</span>
+<span class="font-headline-sm text-headline-sm text-primary font-tabular-data">41 Doctors / Specialists</span>
+</div>
+</div>
+<!-- Reference Proof Visual / Legacy Context (Replacing IMAGE_4 with high fidelity AYUSH clinical graphic) -->
+<div class="bg-surface-container-lowest p-space-md shadow-sm rounded-DEFAULT overflow-hidden">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">Archival Reference Schema</span>
+<span class="px-1.5 py-0.5 bg-surface-container text-on-surface font-label-sm text-label-sm rounded-DEFAULT">SIH-26044 Spec</span>
+</div>
+<div class="w-full rounded-DEFAULT overflow-hidden mb-space-xs bg-surface-container-low">
+<img alt="AYUSH Micro-Bounty Interface Reference" class="w-full h-44 object-cover hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoSHQNfVrKrMfDDInivDFjhuuL5KZQ9Nd9ppuoOOJv_ANxCvY8OvJNYyOdOTnDUNde0FeXYLCwVNpcdIQicnFL7uyNmTIgv7h6Ner2Pb0zwUouIVCve8jhn2b8a8G0igB01DV6hcpcvhd54ILwyCoUzVVyaQbrIOJpdLFEjybOrmqHIEdm6X64YrqQHjUFdYIMCz_TnVtIPL4CGoSqZVh7fhrjn5KSD7GbG7m8UFIHz3p0KSdbU2McclBwDZ-UsEymVlo"/>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Live snapshot of candidate credentialing workflow and NSQF matrix mappings for validated AYUSH research repositories.
+        </p>
+</div>
+</div>
+</div>
+<!-- Micro-interaction / Filter logic -->
+<script>
+    document.querySelectorAll('button').forEach(btn => {
+      btn.addEventListener('click', function(e) {
+        if(this.innerText.includes('Submit Work')) {
+          const original = this.innerHTML;
+          this.innerHTML = '<span class="material-symbols-outlined text-[16px] animate-spin">sync</span><span>Preparing Blind Vault...</span>';
+          setTimeout(() => {
+            this.innerHTML = '<span class="material-symbols-outlined text-[16px]">lock</span><span>Vault Ready #BLIND-2024</span>';
+          }, 800);
+        }
+      });
+    });
+  </script>
+</div></div></main><footer class="w-full bg-surface-container-low py-space-xl mt-space-xl"><div class="max-w-7xl mx-auto px-gutter"><div class="grid grid-cols-1 md:grid-cols-4 gap-gutter mb-space-lg"><div class="flex flex-col gap-space-xs"><span class="font-title-md text-title-md text-primary uppercase">Ministry of AYUSH</span><p class="font-body-sm text-body-sm text-on-surface-variant">Ayush Bhawan, B Block, GPO Complex, INA, New Delhi - 110023. Government of India Official CivicTech Infrastructure.</p></div><div class="flex flex-col gap-space-xs"><span class="font-label-lg text-label-lg text-on-surface uppercase">Regulatory Alignment</span><span class="font-body-sm text-body-sm text-on-surface-variant">National Skills Qualifications Framework (NSQF)</span><span class="font-body-sm text-body-sm text-on-surface-variant">National Qualification Register (NQR) Compliant</span><span class="font-body-sm text-body-sm text-on-surface-variant">Blind Merit Anonymization Standard v1.2</span></div><div class="flex flex-col gap-space-xs"><span class="font-label-lg text-label-lg text-on-surface uppercase">Project Governance</span><span class="font-body-sm text-body-sm text-on-surface-variant">Smart India Hackathon 2024 (SIH-26044)</span><span class="font-body-sm text-body-sm text-on-surface-variant">Engineering Unit: Control_Alt_Defend</span><span class="font-body-sm text-body-sm text-on-surface-variant">Statutory Public Sector Merit Engine</span></div><div class="flex flex-col gap-space-xs"><span class="font-label-lg text-label-lg text-on-surface uppercase">Accessibility & Audit</span><div class="flex flex-wrap gap-space-xs"><span class="px-space-xs py-0.5 bg-surface-container text-on-surface-variant font-label-sm text-label-sm rounded-DEFAULT">WCAG 2.1 AA</span><span class="px-space-xs py-0.5 bg-surface-container text-on-surface-variant font-label-sm text-label-sm rounded-DEFAULT">GIGW Compliant</span><span class="px-space-xs py-0.5 bg-surface-container text-on-surface-variant font-label-sm text-label-sm rounded-DEFAULT">SHA-256 Audit Seal</span></div></div></div><div class="pt-space-md flex flex-col sm:flex-row items-center justify-between text-on-surface-variant font-body-sm text-body-sm"><p>© 2024 Ministry of Ayush, Government of India. Designed under SIH-26044. All Rights Reserved.</p><div class="flex gap-space-md font-label-sm text-label-sm"><a class="hover:text-primary transition-colors" href="#">TERMS OF SERVICE</a><a class="hover:text-primary transition-colors" href="#">PRIVACY CHARTER</a><a class="hover:text-primary transition-colors" href="#">SECURITY AUDIT LOG</a></div></div></div></footer></body></html>

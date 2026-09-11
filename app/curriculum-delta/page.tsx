@@ -102,7 +102,7 @@ export default function CurriculumDeltaPage() {
                         <div className="text-xs text-gray-500">demand trend</div>
                       </div>
                     </div>
-                    
+
                     {/* Progress bar */}
                     <div className="relative h-3 bg-gray-200 rounded-full overflow-hidden">
                       <div
@@ -110,7 +110,7 @@ export default function CurriculumDeltaPage() {
                         style={{ width: `${Math.min(skill.demand_trend_pct * 3, 100)}%` }}
                       />
                     </div>
-                    
+
                     {skill.note && (
                       <p className="text-sm text-gray-600 mt-2 italic">{skill.note}</p>
                     )}

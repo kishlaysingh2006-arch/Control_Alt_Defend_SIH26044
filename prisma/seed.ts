@@ -3,7 +3,7 @@ import { PrismaClient } from '@prisma/client';
 const prisma = new PrismaClient();
 
 async function main() {
-  console.log('🌱 Starting seed...\n');
+  console.log('Starting seed...\n');
 
   // Clear existing data
   console.log('Clearing existing data...');

@@ -8,7 +8,7 @@ export default async function BountyDetailPage({
   params: Promise<{ id: string }>;
 }) {
   const { id } = await params;
-  
+
   const bounty = await prisma.bounty.findUnique({
     where: { id },
   });
