@@ -1,13 +1,13 @@
 // This is your Prisma schema file
-// Using SQLite for local development (no server needed)
+// Using PostgreSQL as specified in the build plan
 
 generator client {
   provider = "prisma-client-js"
 }
 
 datasource db {
-  provider = "sqlite"
-  url      = "file:./dev.db"
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
 }
 
 model User {
@@ -24,7 +24,7 @@ model Bounty {
   title          String
   company        String
   description    String
-  requiredSkills String       // JSON string for SQLite
+  requiredSkills String[]
   submissions    Submission[]
 }
 
@@ -35,7 +35,7 @@ model Submission {
   studentId      String
   student        User     @relation(fields: [studentId], references: [id])
   submissionText String
-  matchedSkills  String   // JSON string for SQLite
+  matchedSkills  String[] @default([])
   heuristicScore Float?
   shortlisted    Boolean  @default(false)
   createdAt      DateTime @default(now())
