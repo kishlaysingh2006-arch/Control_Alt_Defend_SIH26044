@@ -65,41 +65,42 @@ async function main() {
   });
   console.log('');
 
-  // Create 3 bounties with exactly the data from the spec
-  console.log('Creating 3 bounties...');
+  // Create 3 AYUSH-themed bounties
+  console.log('Creating 3 AYUSH-themed bounties...');
   const bounties = await Promise.all([
     prisma.bounty.create({
       data: {
-        title: 'Build a REST API for a Task Tracker',
-        company: 'Northwind Labs',
+        title: 'Design a Patient Wellness Dashboard for a Panchakarma Clinic',
+        company: 'Amrita Ayush Wellness Center',
         description:
-          'Create a RESTful API for a task management system with CRUD operations, user authentication, and PostgreSQL persistence. The API should follow REST design principles and use Express middleware for validation.',
-        requiredSkills: ['Node', 'Express', 'PostgreSQL', 'REST API design'],
+          'Design a comprehensive patient wellness tracking system for a Panchakarma clinic. The dashboard should track patient vitals, treatment protocols, session history, and wellness progress over time. Must demonstrate understanding of Panchakarma procedures and patient documentation standards.',
+        requiredSkills: ['Panchakarma Protocol', 'Patient Documentation', 'Wellness Tracking'],
       },
     }),
     prisma.bounty.create({
       data: {
-        title: 'Build a Data Visualization Dashboard',
-        company: 'Vertex Analytics',
+        title: 'Develop a Yoga Therapy Plan for Workplace Stress Management',
+        company: 'Prana Wellness Retreats',
         description:
-          'Build an interactive dashboard using React and D3.js to visualize complex datasets. The dashboard should support real-time data updates, filtering, and multiple chart types.',
-        requiredSkills: ['React', 'D3.js', 'Data Visualization'],
+          'Create a structured yoga therapy program designed for corporate wellness. The plan should include detailed session planning, breathing techniques (pranayama), and stress management strategies suitable for workplace environments. Must demonstrate practical knowledge of yoga therapy applications.',
+        requiredSkills: ['Yoga Therapy', 'Session Planning', 'Breathing Techniques', 'Stress Management'],
       },
     }),
     prisma.bounty.create({
       data: {
-        title: 'Write Automated Tests for a Checkout Flow',
-        company: 'BluePeak Systems',
+        title: 'Compile a Medicinal Plant Reference Guide for a Community Herbal Garden',
+        company: 'Sanjivani Herbal Foundation',
         description:
-          'Develop comprehensive automated tests for an e-commerce checkout flow using Jest and modern JavaScript testing practices. Include unit tests, integration tests, and proper mocking strategies.',
-        requiredSkills: ['JavaScript', 'Jest', 'Test Automation'],
+          'Develop a comprehensive reference guide for medicinal plants in a community herbal garden. The guide should include plant identification, Ayurvedic properties, preparation methods, and documentation of traditional uses. Must demonstrate knowledge of Ayurvedic pharmacology principles.',
+        requiredSkills: ['Medicinal Plant Identification', 'Ayurvedic Pharmacology', 'Documentation'],
       },
     }),
   ]);
 
-  console.log(`✓ Created ${bounties.length} bounties:`);
+  console.log(`✓ Created ${bounties.length} AYUSH-themed bounties:`);
   bounties.forEach((bounty) => {
-    console.log(`  - ${bounty.title} by ${bounty.company}`);
+    console.log(`  - ${bounty.title}`);
+    console.log(`    Company: ${bounty.company}`);
     console.log(`    Skills: ${bounty.requiredSkills.join(', ')}`);
   });
   console.log('');
@@ -107,7 +108,7 @@ async function main() {
   console.log('✅ Seed completed successfully!');
   console.log(`\nDatabase now contains:`);
   console.log(`  • ${users.length} students`);
-  console.log(`  • ${bounties.length} bounties`);
+  console.log(`  • ${bounties.length} AYUSH-themed bounties`);
   console.log(`  • 0 submissions (will be added in the next step)`);
 }
 

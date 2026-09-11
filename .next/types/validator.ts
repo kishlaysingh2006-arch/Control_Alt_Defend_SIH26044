@@ -65,6 +65,15 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   type __Unused = __Check
 }
 
+// Validate ../../app/curriculum-delta/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/curriculum-delta">> = Specific
+  const handler = {} as typeof import("../../app/curriculum-delta/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
 // Validate ../../app/dashboard/[bountyId]/page.tsx
 {
   type __IsExpected<Specific extends AppPageConfig<"/dashboard/[bountyId]">> = Specific

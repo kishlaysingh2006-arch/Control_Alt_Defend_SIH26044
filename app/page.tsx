@@ -11,7 +11,7 @@ export default function Home() {
           Skill-based merit evaluation platform that removes bias from recruitment
         </p>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
           <Link
             href="/bounties"
             className="bg-blue-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors"
@@ -23,6 +23,12 @@ export default function Home() {
             className="bg-white text-blue-600 px-8 py-3 rounded-lg font-medium hover:bg-gray-50 border-2 border-blue-600 transition-colors"
           >
             Recruiter Dashboard
+          </Link>
+          <Link
+            href="/curriculum-delta"
+            className="bg-purple-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-purple-700 transition-colors"
+          >
+            Skill Trends
           </Link>
         </div>
 

@@ -4,18 +4,19 @@ import { scoreSubmission } from '../lib/scoring';
 const prisma = new PrismaClient();
 
 async function main() {
-  console.log('🎯 Seeding engineered submissions for demo...\n');
+  console.log('🎯 Seeding AYUSH-themed engineered submissions for demo...\n');
 
-  // Get the REST API bounty
+  // Get the Yoga Therapy bounty
   const bounty = await prisma.bounty.findFirst({
-    where: { title: 'Build a REST API for a Task Tracker' },
+    where: { title: 'Develop a Yoga Therapy Plan for Workplace Stress Management' },
   });
 
   if (!bounty) {
-    throw new Error('Bounty "Build a REST API for a Task Tracker" not found. Run npm run seed first.');
+    throw new Error('Bounty "Develop a Yoga Therapy Plan for Workplace Stress Management" not found. Run npm run seed first.');
   }
 
   console.log(`📋 Bounty: ${bounty.title}`);
+  console.log(`Company: ${bounty.company}`);
   console.log(`Required skills: ${bounty.requiredSkills.join(', ')}\n`);
 
   // Get all students
@@ -27,41 +28,41 @@ async function main() {
     where: { bountyId: bounty.id },
   });
 
-  // Define the 5 engineered submissions with exact text from the spec
+  // Define the 5 AYUSH-themed engineered submissions
   const submissions = [
     {
       studentName: 'Ravi Kumar',
       submissionText:
-        'Built a full REST API design using Node and Express, connected to a PostgreSQL database for persistent storage. Implemented CRUD endpoints with proper REST API design conventions, used Express middleware for validation, and Node async patterns for database calls to PostgreSQL.',
-      expectedScore: 100, // 4/4 skills
+        'Designed a complete yoga therapy plan for corporate stress management, with structured session planning across a 7-day cycle and targeted breathing techniques such as Nadi Shodhana and Bhramari.',
+      expectedScore: 100, // 4/4 skills: Yoga Therapy, Session Planning, Breathing Techniques, Stress Management
     },
     {
       studentName: 'Sana Sheikh',
       submissionText:
-        'Developed a Node backend using Express with clean REST API design principles for routing. The persistence layer was planned for a relational database but not fully implemented.',
-      expectedScore: 75, // 3/4 skills: Node, Express, REST API design
+        'Developed a yoga therapy approach for stress management, with detailed session planning for a multi-day corporate wellness program.',
+      expectedScore: 75, // 3/4 skills: Yoga Therapy, Session Planning, Stress Management (missing Breathing Techniques)
     },
     {
       studentName: 'Karan Verma',
       submissionText:
-        'Implemented database queries directly against PostgreSQL and designed the response formats to follow REST API design best practices.',
-      expectedScore: 50, // 2/4 skills: PostgreSQL, REST API design
+        'Focused on breathing techniques research for stress management applications in a general wellness context, without a formal instructional plan.',
+      expectedScore: 50, // 2/4 skills: Breathing Techniques, Stress Management
     },
     {
       studentName: 'Meera Iyer',
       submissionText:
-        'Used Node for backend scripting, and structured the project using Express-inspired middleware patterns for clarity.',
-      expectedScore: 50, // 2/4 skills: Node, Express
+        'Outlined an initial yoga therapy concept along with basic session planning notes for general wellness clients.',
+      expectedScore: 50, // 2/4 skills: Yoga Therapy, Session Planning
     },
     {
       studentName: 'Aditi Sharma',
       submissionText:
-        'Focused primarily on the frontend React interface, with backend integration using PostgreSQL for storage via an ORM abstraction.',
-      expectedScore: 25, // 1/4 skills: PostgreSQL
+        'Focused on general stress management theory from a psychological perspective, without direct yoga instruction experience.',
+      expectedScore: 25, // 1/4 skills: Stress Management only
     },
   ];
 
-  console.log('Creating submissions and computing scores...\n');
+  console.log('Creating AYUSH-themed submissions and computing scores...\n');
 
   for (const sub of submissions) {
     const student = studentMap.get(sub.studentName);
@@ -101,17 +102,19 @@ async function main() {
     console.log('');
   }
 
-  console.log('Engineered submissions created!\n');
-  console.log('Demo Punchline:');
+  console.log('✅ AYUSH-themed engineered submissions created!\n');
+  console.log('📊 Demo Punchline:');
   console.log('   Raw View (by pedigree): Aditi (IIT) → Karan (DTU) → Meera (NIT) → Sana → Ravi (Polytechnic)');
   console.log('   Blind View (by score):  Ravi (100%) → Sana (75%) → Karan/Meera (50%) → Aditi (25%)');
   console.log('');
-  console.log('The reversal: Ravi jumps from LAST to FIRST. Aditi drops from FIRST to LAST.');
+  console.log('🎭 The reversal: Ravi jumps from LAST to FIRST. Aditi drops from FIRST to LAST.');
+  console.log('');
+  console.log('🏥 Context: AYUSH sector (Yoga Therapy for workplace wellness)');
 }
 
 main()
   .catch((e) => {
-    console.error('Seed submissions failed:', e);
+    console.error('❌ Seed submissions failed:', e);
     process.exit(1);
   })
   .finally(async () => {

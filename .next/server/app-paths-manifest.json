@@ -1,10 +1,4 @@
 {
-  "/api/submissions/[id]/route": "app/api/submissions/[id]/route.js",
-  "/_not-found/page": "app/_not-found/page.js",
-  "/api/submissions/route": "app/api/submissions/route.js",
-  "/bounties/[id]/page": "app/bounties/[id]/page.js",
   "/page": "app/page.js",
-  "/bounties/page": "app/bounties/page.js",
-  "/dashboard/[bountyId]/page": "app/dashboard/[bountyId]/page.js",
-  "/dashboard/page": "app/dashboard/page.js"
+  "/bounties/page": "app/bounties/page.js"
 }
