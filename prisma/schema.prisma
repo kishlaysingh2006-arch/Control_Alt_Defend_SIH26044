@@ -1,0 +1,42 @@
+// This is your Prisma schema file
+// Using SQLite for local development (no server needed)
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model User {
+  id          String       @id @default(cuid())
+  name        String
+  institute   String
+  gpa         Float
+  anonymousId String       @unique
+  submissions Submission[]
+}
+
+model Bounty {
+  id             String       @id @default(cuid())
+  title          String
+  company        String
+  description    String
+  requiredSkills String       // JSON string for SQLite
+  submissions    Submission[]
+}
+
+model Submission {
+  id             String   @id @default(cuid())
+  bountyId       String
+  bounty         Bounty   @relation(fields: [bountyId], references: [id])
+  studentId      String
+  student        User     @relation(fields: [studentId], references: [id])
+  submissionText String
+  matchedSkills  String   // JSON string for SQLite
+  heuristicScore Float?
+  shortlisted    Boolean  @default(false)
+  createdAt      DateTime @default(now())
+}

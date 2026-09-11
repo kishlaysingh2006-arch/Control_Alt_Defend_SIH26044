@@ -1,0 +1,85 @@
+{
+  "_note": "ILLUSTRATIVE SAMPLE DATA for the SIH26044 MVP demo panel. The job-role names, NSQF levels, and training hours below are real, published qualifications recognized by the Ministry of AYUSH through the Sub-Council on AYUSH (constituted under the Healthcare Sector Skill Council). The 'demand_trend_pct' figure attached to each role is a fabricated placeholder for demo purposes only -- it represents what a live scraping + forecasting pipeline would eventually output, not an official per-role statistic. Sector-level context (market size, visa numbers) is real and cited separately below.",
+  "source_reference": "Ministry of AYUSH-recognized qualifications via the HSSC Sub-Council on AYUSH, listed on the National Qualification Register (nqr.gov.in)",
+  "generated_for_demo_on": "2026-09-11",
+  "sector_context_real": {
+    "ayush_market_size_2022_usd_billion": 43.3,
+    "ayush_market_projection_2030_usd_billion": 200,
+    "foreign_patients_on_ayush_visa_2024": 46000,
+    "note": "Real, cited sector figures -- used to justify why demand is rising in general, not to imply per-role precision."
+  },
+  "skills": [
+    {
+      "skill": "Panchakarma Technician",
+      "category": "Ayurveda Therapy",
+      "nsqf_level": 4,
+      "training_hours_classroom": 1000,
+      "training_hours_ojt": 500,
+      "demand_trend_pct": 26,
+      "note": "One of the most requested clinical support roles in Ayurveda hospitals and wellness centres."
+    },
+    {
+      "skill": "Yoga Wellness Trainer",
+      "category": "Yoga & Naturopathy",
+      "nsqf_level": 5,
+      "training_hours_classroom": 405,
+      "training_hours_ojt": null,
+      "demand_trend_pct": 31,
+      "note": "Tracks the growth of wellness tourism and corporate wellness programs."
+    },
+    {
+      "skill": "Ayurveda Dietician",
+      "category": "Ayurveda Nutrition",
+      "nsqf_level": 5,
+      "training_hours_classroom": 540,
+      "training_hours_ojt": null,
+      "demand_trend_pct": 19,
+      "note": "Growing interest in food-as-medicine approaches within integrative healthcare."
+    },
+    {
+      "skill": "Yoga Therapy Assistant",
+      "category": "Yoga & Naturopathy",
+      "nsqf_level": 4,
+      "training_hours_classroom": 560,
+      "training_hours_ojt": 340,
+      "demand_trend_pct": 22,
+      "note": "Supports certified yoga therapists in clinical and rehabilitation settings."
+    },
+    {
+      "skill": "Ayurveda Ahar and Poshan Sahyaka",
+      "category": "Ayurveda Nutrition",
+      "nsqf_level": 4,
+      "training_hours_classroom": 500,
+      "training_hours_ojt": 100,
+      "demand_trend_pct": 14,
+      "note": "Entry-level support role in Ayurvedic diet and nutrition counselling."
+    },
+    {
+      "skill": "Kshara Karma Technician",
+      "category": "Ayurveda Therapy",
+      "nsqf_level": 4,
+      "training_hours_classroom": 1000,
+      "training_hours_ojt": 200,
+      "demand_trend_pct": 11,
+      "note": "Specialised para-surgical Ayurveda technique -- a niche but stable skill area."
+    },
+    {
+      "skill": "Cupping Therapy Assistant",
+      "category": "Ayurveda Therapy",
+      "nsqf_level": 4,
+      "training_hours_classroom": 520,
+      "training_hours_ojt": 240,
+      "demand_trend_pct": 9,
+      "note": "Growing as cupping gains visibility in mainstream wellness services."
+    },
+    {
+      "skill": "Assistant Yoga Instructor",
+      "category": "Yoga & Naturopathy",
+      "nsqf_level": 3,
+      "training_hours_classroom": 203,
+      "training_hours_ojt": null,
+      "demand_trend_pct": 17,
+      "note": "Entry-level teaching role with a high volume of open positions relative to other roles here."
+    }
+  ]
+}
