@@ -20,12 +20,28 @@
   },
   "dynamicRoutes": [
     {
+      "page": "/api/submissions/[id]",
+      "regex": "^/api/submissions/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/submissions/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
       "page": "/bounties/[id]",
       "regex": "^/bounties/([^/]+?)(?:/)?$",
       "routeKeys": {
         "nxtPid": "nxtPid"
       },
       "namedRegex": "^/bounties/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/dashboard/[bountyId]",
+      "regex": "^/dashboard/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPbountyId": "nxtPbountyId"
+      },
+      "namedRegex": "^/dashboard/(?<nxtPbountyId>[^/]+?)(?:/)?$"
     }
   ],
   "staticRoutes": [
@@ -46,6 +62,12 @@
       "regex": "^/bounties(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/bounties(?:/)?$"
+    },
+    {
+      "page": "/dashboard",
+      "regex": "^/dashboard(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard(?:/)?$"
     }
   ],
   "dataRoutes": [],

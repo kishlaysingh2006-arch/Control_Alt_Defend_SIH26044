@@ -1,7 +1,10 @@
 {
+  "/api/submissions/[id]/route": "/api/submissions/[id]",
   "/_not-found/page": "/_not-found",
   "/api/submissions/route": "/api/submissions",
   "/bounties/[id]/page": "/bounties/[id]",
   "/page": "/",
-  "/bounties/page": "/bounties"
+  "/bounties/page": "/bounties",
+  "/dashboard/[bountyId]/page": "/dashboard/[bountyId]",
+  "/dashboard/page": "/dashboard"
 }

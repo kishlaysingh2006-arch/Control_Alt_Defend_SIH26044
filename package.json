@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "seed": "tsx prisma/seed.ts"
+    "seed": "tsx prisma/seed.ts",
+    "seed:all": "npm run seed && npm run seed:submissions",
+    "seed:submissions": "tsx prisma/seed-submissions.ts"
   },
   "prisma": {
     "seed": "tsx prisma/seed.ts"
@@ -27,7 +29,7 @@
     "prisma": "^5.22.0",
     "tailwindcss": "^3.4.0",
     "ts-node": "^10.9.2",
-    "tsx": "^4.23.13",
+    "tsx": "^4.23.0",
     "typescript": "^5.3.0"
   }
 }
